@@ -1,0 +1,146 @@
+{
+	
+	"USA":[
+		{
+		"ID":0,
+		"name": "Cornell University",
+		"city": "New york",
+		"Careers":"https://www.cornell.edu/academics/fields.cfm",
+		"link":"https://www.columbia.edu/",
+		"ranking":"14th"
+		"scholarship": "https://finaid.cornell.edu/apply-aid/prospective-applicants/prospective-international-applicants"
+		"cost":"https://www.dfa.cornell.edu/bursar/students-parents/tuition-rates-fees"	
+		},
+		{
+		"ID":1,
+		"name": "Columbia University",
+		"city": "New york",
+		"Careers":"https://www.columbia.edu/content/academics/departments",
+		"link":"https://www.columbia.edu/",
+		"ranking":"18th"
+		"scholarship": "https://www.sfs.columbia.edu/content/scholarships-grants"
+		"cost":"https://www.sfs.columbia.edu/tuition"	
+		},
+		
+		{
+		"ID":3,
+		"name": "New York University (NYU)",
+		"city": "New york",
+		"Careers":"https://www.nyu.edu/academics/academic-programs.html",
+		"link":"https://www.nyu.edu/",
+		"ranking":"21th"
+		"scholarship": "https://www.nyu.edu/admissions/financial-aid-and-scholarships.html"
+		"cost":"https://www.nyu.edu/students/student-information-and-resources/bills-payments-and-refunds/tuition-and-fees.html"	
+		},
+		{
+		"ID":4,
+		"name": "Stanford University",
+		"city": "California",
+		"Careers":"https://www.stanford.edu/list/academic/",
+		"link":"https://www.stanford.edu/",
+		"ranking":"2th"
+		"scholarship": "https://financialaid.stanford.edu/"
+		"cost":"https://financialaid.stanford.edu/undergrad/how/calculator/index.html"	
+		},
+		{
+		"ID":5,
+		"name": "University of California, Berkeley" ,
+		"city": "California",
+		"Careers":"https://www.berkeley.edu/atoz/dept",
+		"link":"https://www.berkeley.edu/",
+		"ranking":"30th"
+		"scholarship": "https://financialaid.berkeley.edu/"
+		"cost":"https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/fee-schedule"	
+		},
+		{
+		"ID":6,
+		"name": "University of California, Los Angeles (UCLA)",
+		"city": "California",
+		"Careers":"https://grad.ucla.edu/schools/",
+		"link":"https://www.ucla.edu/",
+		"ranking":"36th"
+		"scholarship": "https://www.ucla.edu/admission/affordability"
+		"cost":"https://www.ucla.edu/admission/affordability"	
+		}
+		
+		
+	],
+	
+	"France":[
+		{
+		"ID":7,
+		"name": "Paris Sciences et Lettres Research University (PSL)",
+		"city": "Paris",
+		"Careers":"https://psl.eu/en/education/find-your-curriculum",
+		"link":"https://psl.eu/en",
+		"ranking":"52th"
+		"scholarship": "https://psl.eu/en/lifepsl/campus-life-paris/financial-aids"
+		"cost":"~243 euros / year for 2021-2022 + 92 € (CVEC)"	
+		},
+		{
+		"ID":8,
+		"name": "Ecole Polytechnique",
+		"city": "Paris",
+		"Careers":"https://www.polytechnique.edu/fr/departements",
+		"link":"https://www.polytechnique.edu/",
+		"ranking":"61th"
+		"scholarship": "https://programmes.polytechnique.edu/en/bachelor/costs-and-funding/scholarships-and-financial-aid"
+		"cost":"EU Students €12,500 / year -- EU Students €12,500 / year"	
+		},
+		{
+		"ID":9,
+		"name": "Sorbonne University",
+		"city": "Paris",
+		"Careers":"https://www.pantheonsorbonne.fr/formation/departements",
+		"link":"https://www.pantheonsorbonne.fr/",
+		"ranking":"83th"
+		"scholarship": "https://www.pantheonsorbonne.fr/diplomes/psme/scholarships/"
+		"cost":"5 180 €"	
+		},
+		{
+		"ID":10,
+		"name": "IMT Atlantique",
+		"city": "Brest",
+		"Careers":"https://www.imt-atlantique.fr/fr/formation",
+		"link":"https://www.imt-atlantique.fr/fr",
+		"ranking":"N/A"
+		"scholarship": "https://www.imt-atlantique.fr/en/international/study-imt-atlantique/practical-information/scholarships-fundings"
+		"cost":"https://www.imt-atlantique.fr/fr/vie-campus/budget-etudiant"	
+		},
+		{
+		"ID":11,
+		"name": "University of Rennes 1",
+		"city": "Rennes",
+		"Careers":"https://www.univ-rennes1.fr/loffre-de-formation-de-luniversite-de-rennes-1",
+		"link":"https://www.univ-rennes1.fr/",
+		"ranking":"800th"
+		"scholarship": "https://www.igr.univ-rennes1.fr/en/finance-your-studies/"
+		"cost":"  Bachelor's degree : €650/year • Master's degree : €950/year / Engineering programme : €1370/year /Doctorat : €391/year (2020-2021 rate)"	
+		},
+		{
+		"ID":12,
+		"name": "National Institute for Applied Sciences, Rennes",
+		"city": "Rennes",
+		"Careers":"https://www.insa-rennes.fr/schema-cursus-ingenieur-insa0.html",
+		"link":"https://www.insa-rennes.fr/",
+		"ranking":"541th"
+		"scholarship": "https://www.insa-rennes.fr/en/financing-your-stay.html"
+		"cost":"http://www.insa-toulouse.fr/en/formation/register-at-insa-toulouse/rates-and-tuition-fees.html"	
+		},
+		{
+		"ID":13,
+		"name":"Université de Bretagne Occidentale (UBO)",
+		"city": "Brest",
+		"Careers":"http://formations.univ-brest.fr/fr/index.html",
+		"link":"https://www.univ-brest.fr/",
+		"ranking":"N/A"
+		"scholarship": "https://www.univ-brest.fr/GB/menu/Practical-information/Prepare-your-stay?contentId=90576"
+		"cost":"https://www.univ-brest.fr/GB/menu/Practical-information/Prepare-your-stay?contentId=90576"	
+		}
+		
+	],
+	"UK":[
+	],
+	"Germany":[
+	],
+}
