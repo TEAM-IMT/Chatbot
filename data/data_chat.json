@@ -7,8 +7,8 @@
 		"city": "New york",
 		"Careers":"https://www.cornell.edu/academics/fields.cfm",
 		"link":"https://www.columbia.edu/",
-		"ranking":"14th"
-		"scholarship": "https://finaid.cornell.edu/apply-aid/prospective-applicants/prospective-international-applicants"
+		"ranking":"14th",
+		"scholarship": "https://finaid.cornell.edu/apply-aid/prospective-applicants/prospective-international-applicants",
 		"cost":"https://www.dfa.cornell.edu/bursar/students-parents/tuition-rates-fees"	
 		},
 		{
@@ -17,8 +17,8 @@
 		"city": "New york",
 		"Careers":"https://www.columbia.edu/content/academics/departments",
 		"link":"https://www.columbia.edu/",
-		"ranking":"18th"
-		"scholarship": "https://www.sfs.columbia.edu/content/scholarships-grants"
+		"ranking":"18th",
+		"scholarship": "https://www.sfs.columbia.edu/content/scholarships-grants",
 		"cost":"https://www.sfs.columbia.edu/tuition"	
 		},
 		
@@ -28,8 +28,8 @@
 		"city": "New york",
 		"Careers":"https://www.nyu.edu/academics/academic-programs.html",
 		"link":"https://www.nyu.edu/",
-		"ranking":"21th"
-		"scholarship": "https://www.nyu.edu/admissions/financial-aid-and-scholarships.html"
+		"ranking":"21th",
+		"scholarship": "https://www.nyu.edu/admissions/financial-aid-and-scholarships.html",
 		"cost":"https://www.nyu.edu/students/student-information-and-resources/bills-payments-and-refunds/tuition-and-fees.html"	
 		},
 		{
@@ -38,8 +38,8 @@
 		"city": "California",
 		"Careers":"https://www.stanford.edu/list/academic/",
 		"link":"https://www.stanford.edu/",
-		"ranking":"2th"
-		"scholarship": "https://financialaid.stanford.edu/"
+		"ranking":"2th",
+		"scholarship": "https://financialaid.stanford.edu/",
 		"cost":"https://financialaid.stanford.edu/undergrad/how/calculator/index.html"	
 		},
 		{
@@ -48,8 +48,8 @@
 		"city": "California",
 		"Careers":"https://www.berkeley.edu/atoz/dept",
 		"link":"https://www.berkeley.edu/",
-		"ranking":"30th"
-		"scholarship": "https://financialaid.berkeley.edu/"
+		"ranking":"30th",
+		"scholarship": "https://financialaid.berkeley.edu/",
 		"cost":"https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/fee-schedule"	
 		},
 		{
@@ -58,8 +58,8 @@
 		"city": "California",
 		"Careers":"https://grad.ucla.edu/schools/",
 		"link":"https://www.ucla.edu/",
-		"ranking":"36th"
-		"scholarship": "https://www.ucla.edu/admission/affordability"
+		"ranking":"36th",
+		"scholarship": "https://www.ucla.edu/admission/affordability",
 		"cost":"https://www.ucla.edu/admission/affordability"	
 		}
 		
@@ -73,8 +73,8 @@
 		"city": "Paris",
 		"Careers":"https://psl.eu/en/education/find-your-curriculum",
 		"link":"https://psl.eu/en",
-		"ranking":"52th"
-		"scholarship": "https://psl.eu/en/lifepsl/campus-life-paris/financial-aids"
+		"ranking":"52th",
+		"scholarship": "https://psl.eu/en/lifepsl/campus-life-paris/financial-aids",
 		"cost":"~243 euros / year for 2021-2022 + 92 € (CVEC)"	
 		},
 		{
@@ -83,8 +83,8 @@
 		"city": "Paris",
 		"Careers":"https://www.polytechnique.edu/fr/departements",
 		"link":"https://www.polytechnique.edu/",
-		"ranking":"61th"
-		"scholarship": "https://programmes.polytechnique.edu/en/bachelor/costs-and-funding/scholarships-and-financial-aid"
+		"ranking":"61th",
+		"scholarship": "https://programmes.polytechnique.edu/en/bachelor/costs-and-funding/scholarships-and-financial-aid",
 		"cost":"EU Students €12,500 / year -- EU Students €12,500 / year"	
 		},
 		{
@@ -93,8 +93,8 @@
 		"city": "Paris",
 		"Careers":"https://www.pantheonsorbonne.fr/formation/departements",
 		"link":"https://www.pantheonsorbonne.fr/",
-		"ranking":"83th"
-		"scholarship": "https://www.pantheonsorbonne.fr/diplomes/psme/scholarships/"
+		"ranking":"83th",
+		"scholarship": "https://www.pantheonsorbonne.fr/diplomes/psme/scholarships/",
 		"cost":"5 180 €"	
 		},
 		{
@@ -103,8 +103,8 @@
 		"city": "Brest",
 		"Careers":"https://www.imt-atlantique.fr/fr/formation",
 		"link":"https://www.imt-atlantique.fr/fr",
-		"ranking":"N/A"
-		"scholarship": "https://www.imt-atlantique.fr/en/international/study-imt-atlantique/practical-information/scholarships-fundings"
+		"ranking":"N/A",
+		"scholarship": "https://www.imt-atlantique.fr/en/international/study-imt-atlantique/practical-information/scholarships-fundings",
 		"cost":"https://www.imt-atlantique.fr/fr/vie-campus/budget-etudiant"	
 		},
 		{
@@ -113,8 +113,8 @@
 		"city": "Rennes",
 		"Careers":"https://www.univ-rennes1.fr/loffre-de-formation-de-luniversite-de-rennes-1",
 		"link":"https://www.univ-rennes1.fr/",
-		"ranking":"800th"
-		"scholarship": "https://www.igr.univ-rennes1.fr/en/finance-your-studies/"
+		"ranking":"800th",
+		"scholarship": "https://www.igr.univ-rennes1.fr/en/finance-your-studies/",
 		"cost":"  Bachelor's degree : €650/year • Master's degree : €950/year / Engineering programme : €1370/year /Doctorat : €391/year (2020-2021 rate)"	
 		},
 		{
@@ -123,8 +123,8 @@
 		"city": "Rennes",
 		"Careers":"https://www.insa-rennes.fr/schema-cursus-ingenieur-insa0.html",
 		"link":"https://www.insa-rennes.fr/",
-		"ranking":"541th"
-		"scholarship": "https://www.insa-rennes.fr/en/financing-your-stay.html"
+		"ranking":"541th",
+		"scholarship": "https://www.insa-rennes.fr/en/financing-your-stay.html",
 		"cost":"http://www.insa-toulouse.fr/en/formation/register-at-insa-toulouse/rates-and-tuition-fees.html"	
 		},
 		{
@@ -133,14 +133,233 @@
 		"city": "Brest",
 		"Careers":"http://formations.univ-brest.fr/fr/index.html",
 		"link":"https://www.univ-brest.fr/",
-		"ranking":"N/A"
-		"scholarship": "https://www.univ-brest.fr/GB/menu/Practical-information/Prepare-your-stay?contentId=90576"
+		"ranking":"N/A",
+		"scholarship": "https://www.univ-brest.fr/GB/menu/Practical-information/Prepare-your-stay?contentId=90576",
 		"cost":"https://www.univ-brest.fr/GB/menu/Practical-information/Prepare-your-stay?contentId=90576"	
 		}
 		
 	],
 	"UK":[
+		{
+		"ID":14,
+		"name":"Imperial College London",
+		"city": "London",
+		"Careers":"https://www.imperial.ac.uk/study/",
+		"link":"https://www.imperial.ac.uk/",
+		"ranking":"8th",
+		"scholarship": "https://www.imperial.ac.uk/study/pg/fees-and-funding/scholarships/",
+		"cost":"https://www.imperial.ac.uk/study/ug/fees-and-funding/tuition-fees/fee-status/"	
+		},
+		{
+		"ID":15,
+		"name":"University College London (UCL)",
+		"city": "London",
+		"Careers":"https://www.ucl.ac.uk/prospective-students/",
+		"link":"https://www.ucl.ac.uk/",
+		"ranking":"10th",
+		"scholarship": "https://www.ucl.ac.uk/scholarships/",
+		"cost":"https://www.ucl.ac.uk/prospective-students/undergraduate/fees-and-funding-0"	
+		},
+		{
+		"ID":16,
+		"name":"King's College London",
+		"city": "London",
+		"Careers":"https://www.kcl.ac.uk/study",
+		"link":"https://www.kcl.ac.uk/",
+		"ranking":"31th",
+		"scholarship": "https://www.kcl.ac.uk/study/scholarships/index",
+		"cost":"https://www.kcl.ac.uk/study/postgraduate/fees-and-funding/tuition-fees"	
+		},
+		{
+		"ID":17,
+		"name":"University of Edinburgh",
+		"city": "Edinburgh",
+		"Careers":"https://www.ed.ac.uk/studying",
+		"link":"https://www.ed.ac.uk/",
+		"ranking":"20th",
+		"scholarship": "https://www.ed.ac.uk/student-funding",
+		"cost":"https://www.ed.ac.uk/tuition-fees/find"	
+		},
+		{
+		"ID":18,
+		"name":"Heriot-Watt University",
+		"city": "Edinburgh",
+		"Careers":"https://search.hw.ac.uk/s/search.html?collection=uk-courses",
+		"link":"https://www.hw.ac.uk/",
+		"ranking":"301th",
+		"scholarship": "https://www.hw.ac.uk/study/fees/scholarships-bursaries.htm",
+		"cost":"https://www.hw.ac.uk/study/fees/tuition-fees.htm"	
+		},
+		{
+		"ID":19,
+		"name":"University of Manchester",
+		"city": "Manchester",
+		"Careers":"https://www.manchester.ac.uk/study/",
+		"link":"https://www.manchester.ac.uk/",
+		"ranking":"27th",
+		"scholarship": "https://www.manchester.ac.uk/study/international/finance/funding/",
+		"cost":"https://www.manchester.ac.uk/study/international/finance/fees/"	
+		},
+		{
+		"ID":20,
+		"name":"University of Salford",
+		"city": "Manchester",
+		"Careers":"https://www.studyin-uk.com/profiles/university/salford/courses/",
+		"link":"https://www.salford.ac.uk/",
+		"ranking":"801th",
+		"scholarship": "https://www.salford.ac.uk/international/scholarships",
+		"cost":"https://www.salford.ac.uk/askus/admin-essentials/tuition-fees"	
+		},
 	],
 	"Germany":[
+		{
+		"ID":21,
+		"name":"Technical University of Munich",
+		"city": "Munich",
+		"Careers":"https://www.tum.de/en/studies/degree-programs/#",
+		"link":"https://www.tum.de/en/",
+		"ranking":"50th",
+		"scholarship": "https://www.tum.de/en/studies/fees-and-financial-aid/scholarships/tum-scholarships/scholarship-for-international-students-of-tum/",
+		"cost":"144.40 Euro for students in Munich, Garching and Weihenstephan /62.00 Euro for students in Straubing/92.00 Euro for students in Heilbronn."	
+		},
+		{
+		"ID":22,
+		"name":"Ludwig-Maximilians-Universität München",
+		"city": "Munich",
+		"Careers":"https://www.lmu.de/en/study/all-degrees-and-programs/index.html",
+		"link":"https://www.lmu.de/de/index.html",
+		"ranking":"63th",
+		"scholarship": "NA",
+		"cost":"https://www.lmu.de/en/workspace-for-students/abc-study-guide/fees-and-tuition-fees/index.html"	
+		},
+		{
+		"ID":23,
+		"name":"Humboldt-Universität zu Berlin",
+		"city": "Berlin",
+		"Careers":"https://www.hu-berlin.de/de/interessierte",
+		"link":"https://www.hu-berlin.de/en?set_language=en",
+		"ranking":"117th",
+		"scholarship": "N/A",
+		"cost":"https://www.international.hu-berlin.de/en/studierende/aus-dem-ausland/wegweiser/05/05_01_04"	
+		},
+		{
+		"ID":24,
+		"name":"Technische Universität Berlin (TU Berlin)",
+		"city": "Berlin",
+		"Careers":"https://www.tu.berlin/en/studieren/study-programs/all-programs-offered/",
+		"link":"https://www.tu.berlin/en/",
+		"ranking":"148th",
+		"scholarship": "N/A",
+		"cost":"https://www.tu-berlin.de/menue/summer_university/fees_and_conditions/"	
+		},
 	],
+	
+	"Spain": [
+		{
+		"ID":25,
+		"name":"Universitat de Barcelona",
+		"city": "Barcelona",
+		"Careers":"https://www.ub.edu/web/portal/en/study/",
+		"link":"https://www.ub.edu/web/portal/en/",
+		"ranking":"183th",
+		"scholarship": "http://www.ub.edu/acad/es/matricula/becas.html",
+		"cost":"http://www.ub.edu/acad/es/matricula/precios.html"	
+		},
+		{
+		"ID":26,
+		"name":"Universitat Autònoma de Barcelona",
+		"city": "Barcelona",
+		"Careers":"https://www.uab.cat/web/study-1345666325253.html",
+		"link":"https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html",
+		"ranking":"213th",
+		"scholarship": "https://www.uab.cat/web/study/graduate/official-master-s-degrees/apply-for-grants-1345689089359.html",
+		"cost":"https://www.uab.cat/web/study/undergraduate/enrolment/enrolment-fees-1345686083865.html"	
+		},
+		{
+		"ID":27,
+		"name":"Universidad Autónoma de Madrid",
+		"city": "Madrid",
+		"Careers":"http://www.uam.es/UAM/Estudiar-en-la-UAM/1233310431422.htm?language=es&nodepath=Estudios&pid=1233310431422",
+		"link":"http://www.uam.es/UAM/Home.htm?language=es",
+		"ranking":"200th",
+		"scholarship": "https://www.uam.es/UAM/(en)-Becas-para-estudiantes-internaciona/1242663040096.htm?language=en&nodepath=Grants%20for%20international%20students",
+		"cost":"https://www.uam.es/UAM/Fees/1242695485101.htm?language=en&nodepath=Fees"	
+		},
+		{
+		"ID":28,
+		"name":"Complutense University of Madrid",
+		"city": "Madrid",
+		"Careers":"https://www.ucm.es/english/study-programmes",
+		"link":"https://www.ucm.es/english",
+		"ranking":"206th",
+		"scholarship": "https://www.ucm.es/english/scholarships",
+		"cost":"https://www.ucm.es/informacion/tuition-fees-precios-publicos"	
+		},
+		{
+		"ID":29,
+		"name":"Universitat Politècnica de València",
+		"city": "Valencia",
+		"Careers":"https://aplicat.upv.es/buscasiupv-app/views/publica/titulos/buscaTitulacionOfertado.xhtml?p_idioma=i",
+		"link":"http://www.upv.es/index-en.html",
+		"ranking":"326th",
+		"scholarship": "https://www.upv.es/perfiles/estudiante/introduccion-becas-en.html",
+		"cost":"Master Tuition: 2.772 euros (46,20 euros/credit)/ Doctoral and Master's Application Fee: 250 euros/Student Activities Fee: range 150-200euros"	
+		},
+		{
+		"ID":30,
+		"name":"Universitat de Valencia",
+		"city": "Valencia",
+		"Careers":"https://www.uv.es/uvweb/college/en/university-valencia-1285845048380.html",
+		"link":"https://www.uv.es/uvweb/college/en/university-valencia-1285845048380.html",
+		"ranking":"591th",
+		"scholarship": "N/A",
+		"cost":"https://www.uv.es/uvweb/college/en/postgraduate-courses/official-master-s-degrees/enrolment/fees-exemptions-1285847056257.html"	
+		},
+	],
+	
+	"Switzerland":[
+	
+		{
+		"ID":31,
+		"name":"ETH Zurich - Swiss Federal Institute of Technology",
+		"city": "Zürich",
+		"Careers":"https://ethz.ch/en/studies.html",
+		"link":"https://ethz.ch/en.html",
+		"ranking":"6th",
+		"scholarship": "https://ethz.ch/students/en/studies/financial/scholarships.html",
+		"cost":"https://ethz.ch/content/dam/ethz/main/education/finanzielles/files-en/cost-of-living.pdf"	
+		},
+		{
+		"ID":31,
+		"name":"University of Zurich",
+		"city": "Zürich",
+		"Careers":"https://www.uzh.ch/cmsssl/en/studies.html",
+		"link":"https://www.uzh.ch/en.html",
+		"ranking":"69th",
+		"scholarship": "N/A",
+		"cost":"https://www.uzh.ch/cmsssl/en/studies/application/fees.html"	
+		},
+		{
+		"ID":31,
+		"name":"EPFL",
+		"city": "Lausanne",
+		"Careers":"https://www.epfl.ch/education/",
+		"link":"https://www.epfl.ch/en/",
+		"ranking":"14th",
+		"scholarship": "https://www.epfl.ch/education/studies/en/financing-study/grants/excellence-fellowships/",
+		"cost":"https://www.epfl.ch/education/studies/en/rules-and-procedures/study-taxes/tuition-fee-other-fees/"	
+		},
+		{
+		"ID":31,
+		"name":"University of Lausanne",
+		"city": "Lausanne",
+		"Careers":"https://www.unil.ch/central/en/home/menuinst/formations.html",
+		"link":"https://www.unil.ch/central/en/home.html",
+		"ranking":"169th",
+		"scholarship": "N/A",
+		"cost":"Bachelor, Master, EFLE: CHF 580.- par semestre / Doctorat: CHF 80.- par semestre + CHF 200.- de taxe unique d'immatriculation perçue lors du premier semestre."	
+		},
+	
+	
+	]
 }
