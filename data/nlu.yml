@@ -104,4 +104,5 @@ nlu:
     - what is the [link](attribute) of the [second one](mention:2)?
     - in which [city](attribute) is [this](mention)?
     - where is [its](mention) [address](attribute:link)?
+    - in which [country](country) is [Cornell University](name) located?
     
