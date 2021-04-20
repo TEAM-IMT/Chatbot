@@ -5,7 +5,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
 <!-- PROJECT LOGO -->
@@ -130,7 +130,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/TatianaMoreno47/Chatbot.svg?style=for-the-badge
-[contributors-url]: https://github.com/TatianaMoreno47/Chatbot/graphs/contributors
+[contributors-url]: https://github.com/TatianaMoreno47/Chatbot/network/contributors
 [forks-shield]: https://img.shields.io/github/forks/TatianaMoreno47/Chatbot.svg?style=for-the-badge
 [forks-url]: https://github.com/TatianaMoreno47/Chatbot/network/members
 [stars-shield]: https://img.shields.io/github/stars/TatianaMoreno47/Chatbot.svg?style=for-the-badge
