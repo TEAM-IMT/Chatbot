@@ -1,0 +1,10 @@
+pipeline: supervised_embeddings
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+
+policies:
+  - name: MemoizationPolicy
+  - name: EmbeddingPolicy
+    max_history: 5
+    epochs: 100

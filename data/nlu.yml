@@ -90,3 +90,18 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - can you think?
+    - can you sing?
+    - Do you know me?
+    - Who are you?
+    - Why are you here?
+
+- intent: query_knowledge_base
+  example: |
+    - i would kike the list of [universities](list_university) in [USA](object_type) please.
+    - which [universities](list_university) can i find in [New York](city)?
+    - what is the [link](attribute) of the [Technical University of Munich](name)?
+    - what is the [link](attribute) of the [second one](mention:2)?
+    - in which [city](attribute) is [this](mention)?
+    - where is [its](mention) [address](attribute:link)?
+    
