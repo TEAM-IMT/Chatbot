@@ -1,0 +1,6 @@
+# Ignore models trained
+models/*
+__pycache__
+
+# Ignore trained files
+*.tar
