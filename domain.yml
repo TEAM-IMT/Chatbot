@@ -21,22 +21,22 @@ entities:
 slots:
   object_type:
     type: text
-    influence_conversation: true
+    influence_conversation: false
   list_university:
     type: text
-    influence_conversation: true
+    influence_conversation: false
   city:
     type: text
-    influence_conversation: true
+    influence_conversation: false
   attribute:
     type: text
-    influence_conversation: true
+    influence_conversation: false
   mention:
     type: text
-    influence_conversation: true
+    influence_conversation: false
   country:
     type: text
-    influence_conversation: true
+    influence_conversation: false
 
 actions:
   - action_query_knowledge_base
@@ -67,4 +67,4 @@ responses:
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false
