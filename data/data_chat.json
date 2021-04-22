@@ -2,7 +2,7 @@
 	
 	"USA":[
 		{
-		"ID":0,
+		"id":0,
 		"name": "Cornell University",
 		"city": "New york",
 		"careers":"https://www.cornell.edu/academics/fields.cfm",
@@ -12,7 +12,7 @@
 		"cost":"https://www.dfa.cornell.edu/bursar/students-parents/tuition-rates-fees"	
 		},
 		{
-		"ID":1,
+		"id":1,
 		"name": "Columbia University",
 		"city": "New york",
 		"careers":"https://www.columbia.edu/content/academics/departments",
@@ -23,7 +23,7 @@
 		},
 		
 		{
-		"ID":3,
+		"id":3,
 		"name": "New York University (NYU)",
 		"city": "New york",
 		"careers":"https://www.nyu.edu/academics/academic-programs.html",
@@ -33,7 +33,7 @@
 		"cost":"https://www.nyu.edu/students/student-information-and-resources/bills-payments-and-refunds/tuition-and-fees.html"	
 		},
 		{
-		"ID":4,
+		"id":4,
 		"name": "Stanford University",
 		"city": "California",
 		"careers":"https://www.stanford.edu/list/academic/",
@@ -43,7 +43,7 @@
 		"cost":"https://financialaid.stanford.edu/undergrad/how/calculator/index.html"	
 		},
 		{
-		"ID":5,
+		"id":5,
 		"name": "University of California, Berkeley" ,
 		"city": "California",
 		"careers":"https://www.berkeley.edu/atoz/dept",
@@ -53,7 +53,7 @@
 		"cost":"https://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/fee-schedule"	
 		},
 		{
-		"ID":6,
+		"id":6,
 		"name": "University of California, Los Angeles (UCLA)",
 		"city": "California",
 		"careers":"https://grad.ucla.edu/schools/",
@@ -68,7 +68,7 @@
 	
 	"France":[
 		{
-		"ID":7,
+		"id":7,
 		"name": "Paris Sciences et Lettres Research University (PSL)",
 		"city": "Paris",
 		"careers":"https://psl.eu/en/education/find-your-curriculum",
@@ -78,7 +78,7 @@
 		"cost":"~243 euros / year for 2021-2022 + 92 € (CVEC)"	
 		},
 		{
-		"ID":8,
+		"id":8,
 		"name": "Ecole Polytechnique",
 		"city": "Paris",
 		"careers":"https://www.polytechnique.edu/fr/departements",
@@ -88,7 +88,7 @@
 		"cost":"EU Students €12,500 / year -- EU Students €12,500 / year"	
 		},
 		{
-		"ID":9,
+		"id":9,
 		"name": "Sorbonne University",
 		"city": "Paris",
 		"careers":"https://www.pantheonsorbonne.fr/formation/departements",
@@ -98,7 +98,7 @@
 		"cost":"5 180 €"	
 		},
 		{
-		"ID":10,
+		"id":10,
 		"name": "IMT Atlantique",
 		"city": "Brest",
 		"careers":"https://www.imt-atlantique.fr/fr/formation",
@@ -108,7 +108,7 @@
 		"cost":"https://www.imt-atlantique.fr/fr/vie-campus/budget-etudiant"	
 		},
 		{
-		"ID":11,
+		"id":11,
 		"name": "University of Rennes 1",
 		"city": "Rennes",
 		"careers":"https://www.univ-rennes1.fr/loffre-de-formation-de-luniversite-de-rennes-1",
@@ -118,7 +118,7 @@
 		"cost":"  Bachelor's degree : €650/year • Master's degree : €950/year / Engineering programme : €1370/year /Doctorat : €391/year (2020-2021 rate)"	
 		},
 		{
-		"ID":12,
+		"id":12,
 		"name": "National Institute for Applied Sciences, Rennes",
 		"city": "Rennes",
 		"careers":"https://www.insa-rennes.fr/schema-cursus-ingenieur-insa0.html",
@@ -128,8 +128,8 @@
 		"cost":"http://www.insa-toulouse.fr/en/formation/register-at-insa-toulouse/rates-and-tuition-fees.html"	
 		},
 		{
-		"ID":13,
-		"name":"Université de Bretagne Occidentale (UBO)",
+		"id":13,
+		"name":"Universite de Bretagne Occidentale (UBO)",
 		"city": "Brest",
 		"careers":"http://formations.univ-brest.fr/fr/index.html",
 		"link":"https://www.univ-brest.fr/",
@@ -141,7 +141,7 @@
 	],
 	"UK":[
 		{
-		"ID":14,
+		"id":14,
 		"name":"Imperial College London",
 		"city": "London",
 		"careers":"https://www.imperial.ac.uk/study/",
@@ -151,7 +151,7 @@
 		"cost":"https://www.imperial.ac.uk/study/ug/fees-and-funding/tuition-fees/fee-status/"	
 		},
 		{
-		"ID":15,
+		"id":15,
 		"name":"University College London (UCL)",
 		"city": "London",
 		"careers":"https://www.ucl.ac.uk/prospective-students/",
@@ -161,7 +161,7 @@
 		"cost":"https://www.ucl.ac.uk/prospective-students/undergraduate/fees-and-funding-0"	
 		},
 		{
-		"ID":16,
+		"id":16,
 		"name":"King's College London",
 		"city": "London",
 		"careers":"https://www.kcl.ac.uk/study",
@@ -171,7 +171,7 @@
 		"cost":"https://www.kcl.ac.uk/study/postgraduate/fees-and-funding/tuition-fees"	
 		},
 		{
-		"ID":17,
+		"id":17,
 		"name":"University of Edinburgh",
 		"city": "Edinburgh",
 		"careers":"https://www.ed.ac.uk/studying",
@@ -181,7 +181,7 @@
 		"cost":"https://www.ed.ac.uk/tuition-fees/find"	
 		},
 		{
-		"ID":18,
+		"id":18,
 		"name":"Heriot-Watt University",
 		"city": "Edinburgh",
 		"careers":"https://search.hw.ac.uk/s/search.html?collection=uk-courses",
@@ -191,7 +191,7 @@
 		"cost":"https://www.hw.ac.uk/study/fees/tuition-fees.htm"	
 		},
 		{
-		"ID":19,
+		"id":19,
 		"name":"University of Manchester",
 		"city": "Manchester",
 		"careers":"https://www.manchester.ac.uk/study/",
@@ -201,7 +201,7 @@
 		"cost":"https://www.manchester.ac.uk/study/international/finance/fees/"	
 		},
 		{
-		"ID":20,
+		"id":20,
 		"name":"University of Salford",
 		"city": "Manchester",
 		"careers":"https://www.studyin-uk.com/profiles/university/salford/courses/",
@@ -213,7 +213,7 @@
 	],
 	"Germany":[
 		{
-		"ID":21,
+		"id":21,
 		"name":"Technical University of Munich",
 		"city": "Munich",
 		"careers":"https://www.tum.de/en/studies/degree-programs/#",
@@ -223,7 +223,7 @@
 		"cost":"144.40 Euro for students in Munich, Garching and Weihenstephan /62.00 Euro for students in Straubing/92.00 Euro for students in Heilbronn."	
 		},
 		{
-		"ID":22,
+		"id":22,
 		"name":"Ludwig-Maximilians-Universität München",
 		"city": "Munich",
 		"careers":"https://www.lmu.de/en/study/all-degrees-and-programs/index.html",
@@ -233,7 +233,7 @@
 		"cost":"https://www.lmu.de/en/workspace-for-students/abc-study-guide/fees-and-tuition-fees/index.html"	
 		},
 		{
-		"ID":23,
+		"id":23,
 		"name":"Humboldt-Universität zu Berlin",
 		"city": "Berlin",
 		"careers":"https://www.hu-berlin.de/de/interessierte",
@@ -243,7 +243,7 @@
 		"cost":"https://www.international.hu-berlin.de/en/studierende/aus-dem-ausland/wegweiser/05/05_01_04"	
 		},
 		{
-		"ID":24,
+		"id":24,
 		"name":"Technische Universität Berlin (TU Berlin)",
 		"city": "Berlin",
 		"careers":"https://www.tu.berlin/en/studieren/study-programs/all-programs-offered/",
@@ -256,7 +256,7 @@
 	
 	"Spain": [
 		{
-		"ID":25,
+		"id":25,
 		"name":"Universitat de Barcelona",
 		"city": "Barcelona",
 		"careers":"https://www.ub.edu/web/portal/en/study/",
@@ -266,7 +266,7 @@
 		"cost":"http://www.ub.edu/acad/es/matricula/precios.html"	
 		},
 		{
-		"ID":26,
+		"id":26,
 		"name":"Universitat Autònoma de Barcelona",
 		"city": "Barcelona",
 		"careers":"https://www.uab.cat/web/study-1345666325253.html",
@@ -276,8 +276,8 @@
 		"cost":"https://www.uab.cat/web/study/undergraduate/enrolment/enrolment-fees-1345686083865.html"	
 		},
 		{
-		"ID":27,
-		"name":"Universidad Autónoma de Madrid",
+		"id":27,
+		"name":"Universidad Autonoma de Madrid",
 		"city": "Madrid",
 		"careers":"http://www.uam.es/UAM/Estudiar-en-la-UAM/1233310431422.htm?language=es&nodepath=Estudios&pid=1233310431422",
 		"link":"http://www.uam.es/UAM/Home.htm?language=es",
@@ -286,7 +286,7 @@
 		"cost":"https://www.uam.es/UAM/Fees/1242695485101.htm?language=en&nodepath=Fees"	
 		},
 		{
-		"ID":28,
+		"id":28,
 		"name":"Complutense University of Madrid",
 		"city": "Madrid",
 		"careers":"https://www.ucm.es/english/study-programmes",
@@ -296,8 +296,8 @@
 		"cost":"https://www.ucm.es/informacion/tuition-fees-precios-publicos"	
 		},
 		{
-		"ID":29,
-		"name":"Universitat Politècnica de València",
+		"id":29,
+		"name":"Universitat Politecnica de Valencia",
 		"city": "Valencia",
 		"careers":"https://aplicat.upv.es/buscasiupv-app/views/publica/titulos/buscaTitulacionOfertado.xhtml?p_idioma=i",
 		"link":"http://www.upv.es/index-en.html",
@@ -306,7 +306,7 @@
 		"cost":"Master Tuition: 2.772 euros (46,20 euros/credit)/ Doctoral and Master's Application Fee: 250 euros/Student Activities Fee: range 150-200euros"	
 		},
 		{
-		"ID":30,
+		"id":30,
 		"name":"Universitat de Valencia",
 		"city": "Valencia",
 		"careers":"https://www.uv.es/uvweb/college/en/university-valencia-1285845048380.html",
@@ -320,7 +320,7 @@
 	"Switzerland":[
 	
 		{
-		"ID":31,
+		"id":31,
 		"name":"ETH Zurich - Swiss Federal Institute of Technology",
 		"city": "Zürich",
 		"careers":"https://ethz.ch/en/studies.html",
@@ -330,7 +330,7 @@
 		"cost":"https://ethz.ch/content/dam/ethz/main/education/finanzielles/files-en/cost-of-living.pdf"	
 		},
 		{
-		"ID":31,
+		"id":31,
 		"name":"University of Zurich",
 		"city": "Zürich",
 		"careers":"https://www.uzh.ch/cmsssl/en/studies.html",
@@ -340,7 +340,7 @@
 		"cost":"https://www.uzh.ch/cmsssl/en/studies/application/fees.html"	
 		},
 		{
-		"ID":31,
+		"id":31,
 		"name":"EPFL",
 		"city": "Lausanne",
 		"careers":"https://www.epfl.ch/education/",
@@ -350,7 +350,7 @@
 		"cost":"https://www.epfl.ch/education/studies/en/rules-and-procedures/study-taxes/tuition-fee-other-fees/"	
 		},
 		{
-		"ID":31,
+		"id":31,
 		"name":"University of Lausanne",
 		"city": "Lausanne",
 		"careers":"https://www.unil.ch/central/en/home/menuinst/formations.html",

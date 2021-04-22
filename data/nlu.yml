@@ -97,58 +97,66 @@ nlu:
     - Why are you here?
 
 - intent: query_knowledge_base
-  example: |
-    # List of universities by location
+  examples: |
     - i would kike the list of [universities](list_university) in [USA](object_type) please
     - i dont know which [universities](list_university) are in [France](object_type)
     - which [universities](list_university) can i find in [New York](city)?
     - give me the list of [universities](list_university) in [Barcelona](city)
     - list of [universities](list_university) in [Germany](object_type)
     - [universities](list_university) in [last](mention:LAST)
-    # Country-city query
     - in which [country](country) is [Cornell University](object_type:USA) located?
+    - [IMT Atlantique](object_type:France) is in which [country](country)?
+    - give me the [country](country) of [Madrid](city)
+    - [ETH Zurich - Swiss Federal Institute of Technology](object_type:Switzerland) is in which [country](country)?
     - where is [Columbia University](object_type:USA)?
     - in which [city](attribute) is [EPFL](object_type:Switzerland)?
     - in which [city](attribute) is [this](mention)?
-    - [IMT Atlantique](object_type:France) is [in ...](attribute:city)?
+    - [IMT Atlantique](object_type:France) is in which [city](attribute)?
     - give me the [city](attribute) of the [best university](attribute:ranking) in [France](object_type)
-    # Careers query
     - what [careers](attribute) are there in [University of Lausanne](object_type:Switzerland)? 
     - what [careers](attribute) can i find in [this](mention) university?
     - list of [careers](attribute) in [five one](mention:5)
     - give me the [careers](attribute) in the [best university](attribute:ranking) in [Switzerland](object_type).
-    - tell me all [careers](attribute) in [Universidad Autónoma de Madrid](object_type:Spain)
+    - tell me all [careers](attribute) in [Universidad Autonoma de Madrid](object_type:Spain)
     - show [careers](attribute) in [King's College London](object_type:UK), please
-    # Link query
     - what is the [link](attribute) of the [Technical University of Munich](object_type:Germany)?
+    - give me the [link](attribute) of [UCLA](object_type:USA)
     - in the [second one](mention:2), which is the [link](attribute) ?
     - where is [its](mention) [address](attribute:link)?
     - where can I get [information](attribute:link) of [University of Manchester](object_type:UK)?
     - i would like to know [more information](attribute:link) about [Complutense University of Madrid](object_type:Spain)
     - please, [tell me more](attribute:link) about [ETH Zurich - Swiss Federal Institute of Technology](object_type:Switzerland)
     - is there any [information](attribute:link) of [University of Lausanne](object_type:Switzerland)?
-    # Ranking query
     - do you know the [ranking](attribute) of [University of Edinburgh](object_type:UK)?
     - please show me the [ranking](attribute) of [Heriot-Watt University](object_type:UK)?
     - in which [position](attribute:ranking) is the [Universitat de Barcelona](object_type:Spain)?
     - tell me the [place](attribute:ranking) of [Universitat de Valencia](object_type:Spain)
     - give me the [position](attribute:ranking) of the [second one](mention:2)
     - for [third one](mention:3), what is [its](mention) [ranking](attribute)?
-    # Scholarship query
     - is there any [financing](attribute:scholarship) in [ETH Zurich - Swiss Federal Institute of Technology](object_type:Switzerland)?
     - has [Ludwig-Maximilians-Universität München](object_type:Germany) [scholarships](attribute:scholarship)
     - tell me about a [scholarship](attribute) in [Heriot-Watt University](object_type:UK)
-    #- i want to go to [IMT Atlantique](object_type:France), how can I do that?
-    - i want to go to [Paris Sciences et Lettres Research University (PSL)](object_type:France), what kind of [financing](attribute:scholarship) can i obtain?
+    - i want to go to [Paris Sciences et Lettres Research University](object_type:France), what kind of [financing](attribute:scholarship) can i obtain?
+    - in [PSL](object_type:France), what kind of [financing](attribute:scholarship) can i obtain?
     - in [Sorbonne University](object_type:France), is there any [scholarship](attribute)?
-    - give me the list of [scholarships](attribute:scholarship) in [University of California, Los Angeles (UCLA)](object_type:USA)
-    # Cost query
+    - give me the list of [scholarships](attribute:scholarship) in [University of California, Los Angeles](object_type:USA)
     - what are the [costs](attribute:cost) if i want to go to [Columbia University](object_type:USA)?
     - show me the [costs](attribute:cost) of [Universitat de Barcelona](object_type:Spain)
-    - where can i find the [costs](attribute:cost) of [Universitat Autònoma de Barcelona](object_type:Spain)?
+    - where can i find the [costs](attribute:cost) of [Universitat Autonoma de Barcelona](object_type:Spain)?
     - i want to go to [University of Zurich](object_type:Switzerland), how much should I [save](attribute:cost)?
     - how much do i have to [pay](attribute:cost) to [finance](attribute:scholarship) my career in [University of Rennes 1](object_type:France)?
-    - how much it [costs](attribute:cost) to go to [Université de Bretagne Occidentale (UBO)](object_type:France)?
+    - how much it [costs](attribute:cost) to go to [Universite de Bretagne Occidentale](object_type:France)?
+    - how much it [costs](attribute:cost) to go to [UBO](object_type:France)?
+#- i want to go to [IMT Atlantique](object_type:France), how can I do that?
+
+- lookup: country
+  examples: |
+    - Spain
+    - UK
+    - USA
+    - France
+    - Switzerland
+    - Germany
 
 - lookup: USA
   examples: |
@@ -167,7 +175,7 @@ nlu:
     - IMT Atlantique
     - University of Rennes 1
     - National Institute for Applied Sciences, Rennes
-    - Université de Bretagne Occidentale (UBO)
+    - Universite de Bretagne Occidentale (UBO)
 
 - lookup: UK
   examples: |
@@ -189,10 +197,10 @@ nlu:
 - lookup: Spain
   examples: |
     - Universitat de Barcelona
-    - Universitat Autònoma de Barcelona
-    - Universidad Autónoma de Madrid
+    - Universitat Autonoma de Barcelona
+    - Universidad Autonoma de Madrid
     - Complutense University of Madrid
-    - Universitat Politècnica de València
+    - Universitat Politecnica de Valencia
     - Universitat de Valencia
 
 - lookup: Switzerland
@@ -204,7 +212,6 @@ nlu:
 
 - synonym: city
   examples: |
-    - in ...
     - cities
 
 - synonym: ranking

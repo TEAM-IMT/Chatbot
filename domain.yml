@@ -8,6 +8,38 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - query_knowledge_base
+
+entities:
+  - object_type
+  - list_university
+  - city
+  - attribute
+  - mention
+  - country
+
+slots:
+  object_type:
+    type: text
+    influence_conversation: true
+  list_university:
+    type: text
+    influence_conversation: true
+  city:
+    type: text
+    influence_conversation: true
+  attribute:
+    type: text
+    influence_conversation: true
+  mention:
+    type: text
+    influence_conversation: true
+  country:
+    type: text
+    influence_conversation: true
+
+actions:
+  - action_query_knowledge_base
 
 responses:
   utter_greet:
@@ -16,10 +48,10 @@ responses:
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
-
+  
   utter_did_that_help:
   - text: "Did that help you?"
-
+  
   utter_happy:
   - text: "Great, carry on!"
 
@@ -28,6 +60,10 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_ask_rephrase:
+  - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
+  - text: "Could you please rephrase your message? I didn't quite get that."
 
 session_config:
   session_expiration_time: 60

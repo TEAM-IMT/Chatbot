@@ -32,5 +32,5 @@ from rasa_sdk.knowledge_base.actions import ActionQueryKnowledgeBase
 class ActionMyKB(ActionQueryKnowledgeBase):
     def __init__(self):
         # load knowledge base with data from the given file
-        knowledge_base = InMemoryKnowledgeBase("../data/data_chat.json")
+        knowledge_base = InMemoryKnowledgeBase("./data/data_chat.json")
         super().__init__(knowledge_base)
