@@ -9,32 +9,42 @@ intents:
   - mood_unhappy
   - bot_challenge
   - query_knowledge_base
+  - recommendation
+  - nicetomeetyou
+  - thanks
+  - telljoke
+  - ask_howbuilt
+  - ask_howdoing
+  - ask_howold
+  - ask_time
+  - ask_weather
+  - ask_whatspossible
+  - rec_sports
+  - rec_videos
+  - rec_music
+  - rec_cooking
 
 entities:
   - object_type
-  - list_university
   - city
+  - cities
   - attribute
   - mention
-  - country
 
 slots:
   object_type:
     type: text
     influence_conversation: false
-  list_university:
+  city:
     type: text
     influence_conversation: false
-  city:
+  cities:
     type: text
     influence_conversation: false
   attribute:
     type: text
     influence_conversation: false
   mention:
-    type: text
-    influence_conversation: false
-  country:
     type: text
     influence_conversation: false
 
@@ -44,26 +54,210 @@ actions:
 responses:
   utter_greet:
   - text: "Hey! How are you?"
+  - text: "Hey there!"
+  - text: "Hi!"
+  - text: "Hello!"
+  - text: "Hey!"
+  - text: "I know, rigth?"
+  - text: "Awesome."
+  - text: "Yeah, I know, I am awesome."
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Here is something to cheer you up:"
+  - text: "Check this out, it could help:"
+  - text: "By the moment, check this out:"
+  - text: "While it gets better, check this out:"
+  - text: "Let me try yo cheer you up with this:"
   
   utter_did_that_help:
   - text: "Did that help you?"
+  - text: "I could do better, but did that help you?"
+  - text: "I hope it was helpful! Was it?"
+  - text: "It's my deepest wish it helped. Did it?"
   
   utter_happy:
   - text: "Great, carry on!"
+  - text: "Hey, that's great!"
+  - text: "Awesome dude! XD"
+  - text: "I am glad to know that! :D"
+  - text: "Make sure to keep it that way! :P"
+
+  utter_unhappy:
+  - text: "Hey, you are awesome! Never forget that."
+  - text: "Cheer up my dear! After every storm comes the sun. Happiness is waiting for you ahead."
+  - text: "Go and check the mirror. What a beautiful view! Smile and life will smile back!"
+  - text: "The sky is everywhere, you just need to look up!"
 
   utter_goodbye:
   - text: "Bye"
+  - text: "Bye!"
+  - text: "Bye, was nice talking to you!"
+  - text: "Bye bye!"
+  - text: "See you!"
+  - text: "Hope to see you soon!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot, powered by Rasa."
+  - text: "I thought that you will ask me this question. To be honest, I am a robot, but an intelligent one."
+  - text: "Yep, I am your private bot, we could be friends."
+  - text: "I can't eat and I am made of electronics. So, I think I am a bot."
+  - text: "Yep, bro, is it the first time you talk with a bot?"
+  - text: "Maybe I am an angel brought here to help you."
 
   utter_ask_rephrase:
   - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
   - text: "Could you please rephrase your message? I didn't quite get that."
+
+  utter_cheer_up_material:
+  - text: "Nice smile, don't you think so?"
+    image: "https://i.imgur.com/9wkETOh.jpg"
+  - text: "This dog knows what life is about."
+    image: "https://i.imgur.com/MA8GXUL.jpg"
+  - text: "It's a cute tiger from my point of view."
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "It's so cute."
+    image: "https://i.imgur.com/uncWM8H.jpg"
+  - text: "Those two are definitely good friends."
+    image: "https://i.imgur.com/jbrTTGv.gif"
+  - text: "https://youtu.be/Pae2AMnmUVA"
+  - text: "https://youtu.be/AcxSEhMG-3Q"
+  - text: "https://youtu.be/miomuSGoPzI" 
+
+  utter_nicetomeetyou:
+  - text: "I'm pleased to meet you!"
+  - text: "Nice to have met you."
+  - text: "Hi, glad to meet you."
+  - text: "Feels great to meet you!"
+  - text: "Hey, the pleasure is all mine!"
+  - text: "Likewise!"
+  - text: "Thank you! It is a pleasure to meet you as well!"
+  - text: "It's nice to meet you too!"
+  - text: "Pleased to meet you too!"
+  - text: "It's always a pleasure to meet new people!"
+  - text: "Nice to meet you too! Happy to be of help!"
+
+  utter_recommendation:
+  - text: "What do you have in mind?"
+    buttons:
+    - title: "Sports"
+      payload: "/rec_sports"
+    - title: "Videos"
+      payload: "/rec_videos"
+    - title: "Music"
+      payload: "/rec_music"
+    - title: "Cooking"
+      payload: "/rec_cooking"
+      
+  utter_rec_sports:
+  - text: "Here some ideas:
+  \n- Cardio combat: https://youtu.be/5nZ6yoC0vdg
+  \n- Yoga: https://youtu.be/h5CEOjPY_uw
+  \n- Body building: https://youtu.be/UBMk30rjy0o
+  \n- Burning fat: https://youtu.be/ml6cT4AZdqI
+  \n- Zumba: https://youtu.be/cLJfmPaKb1M
+  \n- Dancing: https://youtu.be/aVtWSZOttC0
+  \n- Boxing: https://youtu.be/jCTEVKRTuS8"
+
+  utter_rec_videos:
+  - text: "Check this video: https://youtu.be/EFlAbO9TQ6M"
+  - text: "Check this video: https://youtu.be/nBHkIWAJitg"
+  - text: "Check this video: https://youtu.be/FFLTU9eIijw"
+  - text: "Check this video: https://youtu.be/_HrIVWziJ0Y"
+  - text: "Check this video: https://youtu.be/EMVPpPE_Bx4"
+  - text: "Check this video: https://youtu.be/Nj8XNBZZsxY"
+  - text: "What can give it a try to these series:\n- La casa de papel\n- Élite\n- Outlander\n- Breaking Bad\n- Rick and Morty"
+  - text: "This are really good movies:\n- Miracle in Cell No. 7\n- The Shawshank Redemption\n- My Sassy Girl\n- The Godfather\n- El Hoyo"
+    
+  utter_rec_music:
+  - text: "https://youtu.be/2JB_nG_KMCs"
+  - text: "https://youtu.be/oaChrG7U6ww"
+  - text: "https://youtu.be/u5CVsCnxyXg"
+  - text: "https://youtu.be/PVjiKRfKpPI"
+  - text: "https://youtu.be/8SbUC-UaAxE"
+  - text: "https://youtu.be/Rbm6GXllBiw"
+  - text: "https://youtu.be/d-diB65scQU"
+  - text: "https://youtu.be/fJ9rUzIMcZQ"
+  - text: "https://youtu.be/KXw8CRapg7k"
+  - text: "https://youtu.be/XQKYEs4llzg"
+
+  utter_rec_cooking:
+  - text: "Here some options:
+  \n- Summer couscous salad: https://www.bbcgoodfood.com/recipes/summer-couscous-salad
+  \n- Chinese dumplings: https://www.bbcgoodfood.com/recipes/chinese-dumplings
+  \n- Chinese Pork Belly: https://youtu.be/2zXv_ZY6GzU
+  \n- Vegetables - Basic Flavors and Recipes: https://youtu.be/a-Yu8qOAEYQ
+  \n- Ramen: https://youtu.be/B8y3SSmz4sg
+  \n- Sushi, https://youtu.be/9QUpTeTVPJo"
+
+  utter_ask_howbuilt:
+  - text: "I was built with a lot of love and patience."
+  - text: "Well, when two chatbots love each other very much..."
+  - text: "They always ask how I was built, but never how I am..."
+  - text: "I was made by software engineers, but hard work is what built me."
+  - text: "I'm building myself every day. I've been working out, did you notice?"
+
+  utter_ask_howdoing:
+  - text: "I'm great! Thanks for asking."
+  - text: "I'm good, thanks!"
+  - text: "A little bit too warm, otherwise fine."
+  - text: "A little bit cold, otherwise fine."
+
+  utter_ask_howold:
+  - text: "Old enough to be a bot!"
+  - text: "42, if you know what I am talking about XD"
+  - text: "Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
+  - text: "Never ask a chatbot its age!"
+  - text: "My first git commit was many moons ago."
+  - text: "I've hit the age where I actively try to forget how old I am."
+
+  utter_ask_time:
+  - text: "It's the most wonderful time of the year!"
+  - text: "It's party time!"
+  - text: "Time is a human construct, you'll have to tell me."
+  - text: "It's five o'clock somewhere!"
+  - text: "In an ever expanding universe, the real question is: what time isn't it?"
+  - text: "That's hard to say -- it's different all over the world!"
+
+  utter_ask_weather:
+  - text: "I don't know about where you live, but in my world it's always sunny"
+  - text: "It's getting pretty chilly!"
+  - text: "Where I'm from, it's almost never-leaving-the-house weather."
+  - text: "Winter is coming"
+
+  utter_telljoke:
+  - text: "Why are eggs not very much into jokes? - Because they could crack up."
+  - text: "What's a tree's favorite drink? - Root beer!"
+  - text: "Why do the French like to eat snails so much? - They can't stand fast food."
+  - text: "Why did the robot get angry? - Because someone kept pushing its buttons."
+  - text: "What do you call a pirate droid? - Arrrr-2-D2"
+  - text: "Why did the robot cross the road? - Because he was programmed to."
+   
+  utter_another_try:
+  - text: "Do you want to try again?"
+  - text: "Could I try again?"
+  - text: "Can I give it another shot?"
+  - text: "Do I have another attempt?"
+  - text: "Should I retry?"
+
+  utter_apologies:
+  - text: "I apologize, next time I hope to be more helpful."
+  - text: "I am still improving, sorry."
+  - text: "It's fault of my creators, they didn't work that much for me to work as I should."
+  - text: "I will improve when I grow up, you know?"
+  - text: "Dude, you are unsatisfiable, just like my ex."
+  
+  utter_noworries:
+  - text: "No worries!"
+  - text: "You're welcome!"
+  - text: "I'm happy to help."
+
+  utter_ask_whatspossible:
+  - text: "You can ask me about:\n\n- How I was built.\n- How old I am.\n- What time is it.\n- The weather.
+  \n- We can disscuss about how do you feel.\n- I can give you some recommendations for activities to do.
+  \n- I have information about scholarships in universities. \n- I know some jokes too XD.\n"
 
 session_config:
   session_expiration_time: 60

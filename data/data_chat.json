@@ -1,5 +1,4 @@
 {
-	
 	"USA":[
 		{
 		"id":0,
@@ -330,7 +329,7 @@
 		"cost":"https://ethz.ch/content/dam/ethz/main/education/finanzielles/files-en/cost-of-living.pdf"	
 		},
 		{
-		"id":31,
+		"id":32,
 		"name":"University of Zurich",
 		"city": "Zürich",
 		"careers":"https://www.uzh.ch/cmsssl/en/studies.html",
@@ -340,7 +339,7 @@
 		"cost":"https://www.uzh.ch/cmsssl/en/studies/application/fees.html"	
 		},
 		{
-		"id":31,
+		"id":33,
 		"name":"EPFL",
 		"city": "Lausanne",
 		"careers":"https://www.epfl.ch/education/",
@@ -350,7 +349,7 @@
 		"cost":"https://www.epfl.ch/education/studies/en/rules-and-procedures/study-taxes/tuition-fee-other-fees/"	
 		},
 		{
-		"id":31,
+		"id":34,
 		"name":"University of Lausanne",
 		"city": "Lausanne",
 		"careers":"https://www.unil.ch/central/en/home/menuinst/formations.html",

@@ -33,3 +33,137 @@ stories:
   steps:
   - intent: query_knowledge_base
   - action: action_query_knowledge_base
+
+- story: bot challenge
+  steps: 
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: happy path
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- story: recommendation
+  steps:
+  - intent: recommendation
+  - action: utter_recommendation
+
+- story: sad path 3
+  steps:
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - action: utter_cheer_up
+  - action: utter_cheer_up_material
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_another_try
+  - intent: affirm
+  - action: utter_cheer_up_material
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 4
+  steps:
+  - intent: mood_unhappy
+  - action: utter_unhappy
+  - action: utter_cheer_up
+  - action: utter_cheer_up_material
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_another_try
+  - intent: affirm
+  - action: utter_cheer_up_material
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_apologies
+
+- story: sports
+  steps:
+  - intent: rec_sports
+  - action: utter_rec_sports
+
+- story: videos
+  steps:
+  - intent: rec_videos
+  - action: utter_rec_videos
+
+- story: music
+  steps:
+  - intent: rec_music
+  - action: utter_rec_music
+
+- story: cooking
+  steps:
+  - intent: rec_cooking
+  - action: utter_rec_cooking
+
+- story: tell joke
+  steps:
+  - intent: telljoke
+  - action: utter_telljoke
+
+- story: how built
+  steps:
+  - intent: ask_howbuilt
+  - action: utter_ask_howbuilt
+
+- story: how old
+  steps:
+  - intent: ask_howold
+  - action: utter_ask_howold
+
+- story: what time is it
+  steps:
+  - intent: ask_time
+  - action: utter_ask_time
+
+- story: what's the weather
+  steps:
+  - intent: ask_weather
+  - action: utter_ask_weather
+
+- story: what's possible
+  steps:
+  - checkpoint: check_greet
+  - checkpoint: check_howdoing
+  - checkpoint: check nicetomeetyou
+  - intent: ask_whatspossible
+  - action: utter_ask_whatspossible
+
+- story: nice to meet you
+  steps:
+  - checkpoint: check_greet
+  - checkpoint: check_howdoing
+  - intent: nicetomeetyou
+  - action: utter_nicetomeetyou
+  - checkpoint: check nicetomeetyou
+
+- story: how doing
+  steps:
+  - checkpoint: check_greet
+  - intent: ask_howdoing
+  - action: utter_ask_howdoing
+  - checkpoint: check_howdoing
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - checkpoint: check_greet
+
+- story: thanks
+  steps:
+  - intent: thanks
+  - action: utter_noworries
+
+- story: affirm
+  steps:
+  - intent: affirm
+  - action: utter_great
+  
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
