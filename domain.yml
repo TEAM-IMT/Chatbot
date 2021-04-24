@@ -77,6 +77,11 @@ responses:
   - text: "I hope it was helpful! Was it?"
   - text: "It's my deepest wish it helped. Did it?"
   
+  utter_great:
+  - text: "I know, rigth?"
+  - text: "Awesome."
+  - text: "Yeah, I know, I am awesome."
+
   utter_happy:
   - text: "Great, carry on!"
   - text: "Hey, that's great!"
