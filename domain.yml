@@ -55,6 +55,27 @@ slots:
   mention:
     type: text
     influence_conversation: false
+  ranking:
+    type: text
+    influence_conversation: false
+  USA:
+    type: text
+    influence_conversation: false
+  France:
+    type: text
+    influence_conversation: false
+  UK:
+    type: text
+    influence_conversation: false
+  Germany:
+    type: text
+    influence_conversation: false
+  Spain:
+    type: text
+    influence_conversation: false
+  Switzerland:
+    type: text
+    influence_conversation: false
 
 actions:
   - action_query_knowledge_base
