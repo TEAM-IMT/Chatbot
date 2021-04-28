@@ -30,6 +30,8 @@ entities:
   - cities
   - attribute
   - mention
+  - ranking
+  - name
 
 slots:
   object_type:
