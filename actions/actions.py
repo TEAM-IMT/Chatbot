@@ -28,9 +28,88 @@
 
 from rasa_sdk.knowledge_base.storage import InMemoryKnowledgeBase
 from rasa_sdk.knowledge_base.actions import ActionQueryKnowledgeBase
+from rasa_sdk.executor import CollectingDispatcher
+from typing import Text, Dict, List, Any
+from rasa_sdk import utils, Action, Tracker
+
+chatbot_name = 'Chatbot'
 
 class ActionMyKB(ActionQueryKnowledgeBase):
     def __init__(self):
         # load knowledge base with data from the given file
         knowledge_base = InMemoryKnowledgeBase("./data/data_chat.json")
         super().__init__(knowledge_base)
+
+    def utter_attribute_value(self, dispatcher: CollectingDispatcher, object_name: Text,
+        attribute_name: Text, attribute_value: Text,):
+        """
+        Utters a response that informs the user about the attribute value of the
+        attribute of interest.
+        Args:
+            dispatcher: the dispatcher
+            object_name: the name of the object
+            attribute_name: the name of the attribute
+            attribute_value: the value of the attribute
+        """
+        #dispatcher.utter_message(attachment = "")
+        if attribute_value:
+            if attribute_name in ['city']:
+                dispatcher.utter_message(text = f"{chatbot_name} -> Sure. The {attribute_name} of '{object_name}' is '{attribute_value}'.")
+            elif attribute_name in ['careers', 'link', 'scholarship']:
+                dispatcher.utter_message(text = f"{chatbot_name} -> Let me check (...). ")
+                dispatcher.utter_message(text = f"You can get all the info in : '{attribute_value}'.")
+            elif attribute_name in ['ranking']:
+                dispatcher.utter_message(text = f"{chatbot_name} -> Ok. '{object_name}' is the '{attribute_value}' best in the world. Awesome!")
+            elif attribute_name in ['cost']:
+                if 'http' in attribute_value and '//' in attribute_value:
+                    dispatcher.utter_message(text = f"{chatbot_name} -> All the information about costs of {object_name} is in the following link: {attribute_value}")
+                else:
+                    dispatcher.utter_message(text = f"{chatbot_name} -> The costs of '{object_name}' are: '{attribute_value}'.")
+            else:    
+                dispatcher.utter_message(text = f"{chatbot_name} -> '{object_name}' has the value '{attribute_value}' for attribute '{attribute_name}'.")
+        else:
+            dispatcher.utter_message(
+                text = f"{chatbot_name} ->  Did not find a valid value for attribute '{attribute_name}' for object '{object_name}'."
+            )
+
+    async def utter_objects(self, dispatcher: CollectingDispatcher, object_type: Text,
+        objects: List[Dict[Text, Any]],):
+        """
+        Utters a response to the user that lists all found objects.
+        Args:
+            dispatcher: the dispatcher
+            object_type: the object type
+            objects: the list of objects
+        """
+        if objects:
+            dispatcher.utter_message(
+                text=f"{chatbot_name} -> Found the following list of universities for '{object_type}':"
+            )
+
+            repr_function = await utils.call_potential_coroutine(
+                self.knowledge_base.get_representation_function_of_object(object_type)
+            )
+
+            for i, obj in enumerate(objects, 1):
+                dispatcher.utter_message(text=f"{i}: {repr_function(obj)}")
+        else:
+            dispatcher.utter_message(
+                text=f"{chatbot_name} ->  I could not find any objects of type '{object_type}'."
+            )
+
+# class ActionSpellingCheck(Action):
+#     def name(self) -> Text:
+#         return "action_spelling_check"
+    
+#     async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#         textdata = tracker.lastest_message.text # Get last message
+#         textdata = textdata.split()
+#         message = ' '.join(spell.correction(w) for w in textdata)
+#         if textdata != message: # Spelling error
+#             mistakes = spell.unknown(textdata)
+#             message = ""
+#             for i, word in enumerate(mistakes): # Check words errors
+#                 message += "{} ({})".format(spell.correction(word), word)
+#                 if len(mistakes) > 1 and i - 1 < len(mistakes): message += ", "
+#             dispatcher.utter_message(text = "I dont get it. Did you said " + message " ?")
+#         return []
