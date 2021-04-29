@@ -873,22 +873,22 @@ nlu:
     - i would kike the list of universities in [USA](object_type) please
     - i dont know which universities are in [France](object_type)
     - which universities can i find in [New York](city)?
-    - give me the list of universities in [Barcelona](city)
+    - give me the list of universities(name)[Spain](object_type) in [Barcelona](city)
     - list of universities in [Germany](object_type)
-    - in which [city](attribute) is [EPFL](object_type:Switzerland)?
+    - in which [city](attribute) is [EPFL](Switzerland)?
     - in which [city](attribute) is [this](mention)?
-    - [IMT Atlantique](object_type:France) is in which [city](attribute)?
-    - what [careers](attribute) are there in [University of Lausanne](object_type:Switzerland)? 
+    - [IMT Atlantique](France) is in which [city](attribute)?
+    - what [careers](attribute) are there in [University of Lausanne](Switzerland)? 
     - what [careers](attribute) can i find in [this](mention) university?
     - list of [careers](attribute) in [five one](mention:5)
-    - tell me all [careers](attribute) in [Universidad Autonoma de Madrid](object_type:Spain)
-    - show [careers](attribute) in [King's College London](object_type:UK), please
-    - what is the [link](attribute) of the [Technical University of Munich](object_type:Germany)?
-    - give me the [link](attribute) of [UCLA](object_type:USA)
+    - tell me all [careers](attribute) in [Universidad Autonoma de Madrid](Spain)
+    - show [careers](attribute) in [King's College London](UK), please
+    - what is the [link](attribute) of the [Technical University of Munich](Germany)?
+    - give me the [link](attribute) of [UCLA](USA)
     - in the [second one](mention:2), which is the [link](attribute) ?
     - where is [its](mention) [address](attribute:link)?
-    - where can I get [information](attribute:link) of [University of Manchester](object_type:UK)?
-    - i would like to know [more information](attribute:link) about [Complutense University of Madrid](object_type:Spain)
+    - where can I get [information](attribute:link) of [University of Manchester](UK)?
+    - i would like to know [more information](attribute:link) about [Complutense University of Madrid](Spain)
     - please, [tell me more](attribute:link) about [ETH Zurich - Swiss Federal Institute of Technology](object_type:Switzerland)
     - is there any [information](attribute:link) of [University of Lausanne](object_type:Switzerland)?
     - do you know the [ranking](attribute) of [University of Edinburgh](object_type:UK)?
@@ -901,7 +901,7 @@ nlu:
     - has [Ludwig-Maximilians-Universität München](object_type:Germany) [scholarships](attribute:scholarship)
     - tell me about a [scholarship](attribute) in [Heriot-Watt University](object_type:UK)
     - i want to go to [Paris Sciences et Lettres Research University](object_type:France), what kind of [financing](attribute:scholarship) can i obtain?
-    - in [PSL](object_type:France), what kind of [financing](attribute:scholarship) can i obtain?
+    - in [PSL](France), what kind of [financing](attribute:scholarship) can i obtain?
     - in [Sorbonne University](object_type:France), is there any [scholarship](attribute)?
     - give me the list of [scholarships](attribute:scholarship) in [University of California, Los Angeles](object_type:USA)
     - what are the [costs](attribute:cost) if i want to go to [Columbia University](object_type:USA)?
@@ -911,6 +911,88 @@ nlu:
     - how much do i have to [pay](attribute:cost) to [finance](attribute:scholarship) my career in [University of Rennes 1](object_type:France)?
     - how much it [costs](attribute:cost) to go to [Universite de Bretagne Occidentale](object_type:France)?
     - how much it [costs](attribute:cost) to go to [UBO](object_type:France)?
+    - from which [countries](object_type) do you have information?
+    - In which [countries](object_type) can i study ?
+    - Give me some [countries](object_type) to study 
+    - List of [countries](object_type) to study
+    - cite some [countries](object_type) to study
+    - Give me some universities [USA](object_type)
+    - List some universities [UK](object_type)
+    - What universities do you have in [Switzerland](object_type) ?
+    - Give me some places to study in [Spain](object_type)
+    - Universities in [Germany](object_type)
+    - Colleges in [France](object_type)
+    - Give me some colleges in [USA](object_type)
+    - List of colleges in [France](object_type)
+    - How much it [cost](attribute) to study in the [firts one](mention:1)
+    - Give me the [cost](attribute) of the [second one](mention:2)
+    - [Cost](attribute:cost) of the [third one](mention:3)
+    - How much it [cost](attribute) to study in the [third one](mention:3)
+    - Give me the [cost](attribute) of the [fourth one](mention:4)
+    - [Cost](attribute:cost) of the [fifth one](mention:5)
+    - [Cost](attribute:cost) of the [sixth one](mention:6)
+    - [Cost](attribute:cost) of the [last one](mention:LAST)
+    - [Cost](attribute:cost) of [any of those](mention:ANY)
+    - I want more [information](attribute:link) about the [first one](mention:1)
+    - Give me more [information](attribute:link) about the [second one](mention:2) 
+    - Do you have more [information](attribute:link) about the [third one](mention:3) ?
+    - Give me [information](attribute:link) about the [fourth one](mention:4)
+    - Give me more [information](attribute:link) about the [last one](mention:LAST) 
+    - Give me [information](attribute:link) about [any one](mention:ANY) ?
+    - In which [city](attribute) is the [second one](mention:2) ?
+    - Where is [located](attribute:city) the [third one](mention:3) ?
+    - Give me the [location](attribute:city) of the [firts one](mention:1)
+    - Give me the [location](attribute:city) of the [last one](mention:LAST)
+    - [city](attribute) of the [fourth](mention:4)
+    - [city](attribute) of [any one](mention:ANY)
+    - Give me the [cities](attribute:city) in [France](object_type) 
+    - List of [cities](attribute:city) in [Switzerland](object_type)
+    - In which [cities](city) can i study in [UK](object_type)
+    - What about [University of Edinburgh](UK)?
+    - Give me information about [University of Lausanne](Switzerland)
+    - Tell me about [Universidad Autonoma de Madrid](Spain)
+    - Talk about [Humboldt-Universität zu Berlin](Germany)
+    - Tell me about [Ecole Polytechnique](France)
+    - Display information about [Stanford University](USA)
+    - What about [Columbia University](USA)?
+    - Give me information about [National Institute for Applied Sciences, Rennes](France)
+    - Tell me about [University of Salford](UK)
+    - Talk about [Technische Universität Berlin (TU Berlin)](Germany)
+    - Tell me about [Universitat de Valencia](Valencia)
+    - Display information about [University of Zurichy](Switzerland)
+    - List universities in [California](city) [USA](object_type)
+    - I want to study in [Lausanne](city)[Switzerland](object_type)
+    - Give me options to study in [Valencia](city) [Spain](object_type)
+    - Do you have information about universities in [Madrid](city) [Spain](object_type) ?
+    - I want to go to study in [Berlin](city) [Germany](object_type)
+    - List universities in [Manchester](city) [UK](object_type)
+    - I want to study in [Rennes](city) [France](object_type)
+    - Give me options to study in [New york](city) [USA](object_type)
+    - Do you have information about universities in [Brest](city) [France](object_type) ?
+    - I want to go to study in [London](city) [UK](object_type)
+    - Which is the [ranking](ranking) of the universities in [London](city) ?
+    - Give me the [ranking](ranking) of the universities in [California](city)
+    - What [cost](attribute) do [they](mention) have ?
+    - What is the [cost](attribute) of going to [ETH Zurich - Swiss Federal Institute of Technology](Switzerland) ?
+    - Can you give the [cost](attribute) of [that one](mention) ?
+    - Can you give me the [place](attribute:ranking) of [University of Zurich](Switzerland)?
+    - Give me some [careers](attribute) of [EPFL](Switzerland)
+    - Could you tell me the [ranking](attribute) of [University of Lausanne](Switzerland)?
+    - Give me the [ranking](attribute) of the [second one](mention:2)
+    - Give me the [ranking](attribute) of the [last one](mention:LAST)
+    - Tell me the [ranking](attribute) of the [first one](mention:1)
+    - What can I [study](attribute:careers) in [Complutense University of Madrid](Spain)?
+    - Give me some options of [studies](attribute:careers) in [Universitat Politecnica de Valencia](Spain)
+    - Do the [Universidad Autonoma de Madri](Spain) have any [aids](attribute:scholarship) ?
+    - Give me the [aids options](attribute:scholarship) of the [first one](mention:1)
+    - Tell me some [scholarships](attribute:scholarship) of the [second one](mention:2)
+    - Give [finantial options](attribute:scholarship) of the [last one](mention:LAST)
+    - Give me more [information](attribute:link) about [Imperial College London](UK)
+    - Tell me some [careers](attribute) options in [Imperial College London](UK)
+    
+
+
+    
 
 - lookup: USA
   examples: |
@@ -964,6 +1046,15 @@ nlu:
     - EPFL
     - University of Lausanne
 
+- lookup: countries
+  examples: |
+    - USA
+    - France
+    - UK
+    - Germany
+    - Spain
+    - Switzerland
+
 - lookup: cities
   examples: |
     - New york
@@ -1000,4 +1091,4 @@ nlu:
 - synonym: scholarship
   examples: |
     - financing
-    - fincance
+    - finance
