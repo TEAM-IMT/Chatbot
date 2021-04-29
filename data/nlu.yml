@@ -911,6 +911,13 @@ nlu:
     - how much do i have to [pay](attribute:cost) to [finance](attribute:scholarship) my career in [University of Rennes 1](object_type:France)?
     - how much it [costs](attribute:cost) to go to [Universite de Bretagne Occidentale](object_type:France)?
     - how much it [costs](attribute:cost) to go to [UBO](object_type:France)?
+    - what are the requirements for apply for the [2] (mention:2) university? 
+    - what are the requirements for apply for the [second] (mention:2) university? 
+    - Can you give me the top ranking of universities in [New York] (city)?
+    - Could I see universities in [Barcelona](city)?
+    - How many I must pay to go [Paris Sciences et Lettres Research University] (object_type:France)?
+    - how expensive is [PSL] (object_type:France)?
+    
 
 - lookup: USA
   examples: |
