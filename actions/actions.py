@@ -4,35 +4,17 @@
 # See this guide on how to implement these action:
 # https://rasa.com/docs/rasa/custom-actions
 
-
-# This is a simple example for a custom action which utters "Hello World!"
-
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
-
 from rasa_sdk.knowledge_base.storage import InMemoryKnowledgeBase
 from rasa_sdk.knowledge_base.actions import ActionQueryKnowledgeBase
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet, UserUttered, BotUttered, UserUtteranceReverted, FollowupAction
+from rasa.core.actions.action import action_for_name_or_text
+from rasa.core.interpreter import RasaNLUInterpreter, RasaNLUHttpInterpreter
 from typing import Text, Dict, List, Any
 from rasa_sdk import utils, Action, Tracker
+import asyncio
 
-chatbot_name = 'Chatbot'
+chatbot_name = 'Wakanda for ever'
 
 class ActionMyKB(ActionQueryKnowledgeBase):
     def __init__(self):
@@ -97,19 +79,27 @@ class ActionMyKB(ActionQueryKnowledgeBase):
                 text=f"{chatbot_name} ->  I could not find any objects of type '{object_type}'."
             )
 
-# class ActionSpellingCheck(Action):
-#     def name(self) -> Text:
-#         return "action_spelling_check"
+class ActionSpellingCheck(Action):
+    def name(self) -> Text:
+        return "action_spelling_check"
     
-#     async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#         textdata = tracker.lastest_message.text # Get last message
-#         textdata = textdata.split()
-#         message = ' '.join(spell.correction(w) for w in textdata)
-#         if textdata != message: # Spelling error
-#             mistakes = spell.unknown(textdata)
-#             message = ""
-#             for i, word in enumerate(mistakes): # Check words errors
-#                 message += "{} ({})".format(spell.correction(word), word)
-#                 if len(mistakes) > 1 and i - 1 < len(mistakes): message += ", "
-#             dispatcher.utter_message(text = "I dont get it. Did you said " + message " ?")
-#         return []
+    async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        wrong_words = tracker.get_slot('wrong_words')[0]
+        correct_words = tracker.get_slot('correct_words')[0]
+        if len(wrong_words) > 0: # List of words to fix
+            print(wrong_words, len(wrong_words))
+            print(correct_words, len(correct_words))
+            message = " and ".join(["{} ({})".format(w[0], w[1]) for w in zip(correct_words, wrong_words)])
+            dispatcher.utter_message(text = f"{chatbot_name} -> I don't get it. Did you mean {message} ?")
+            return [SlotSet("wrong_words", []), SlotSet("correct_words", []),] # Erase parameters
+        return []
+
+class ActionSpellingCorrection(Action):
+    def name(self) -> Text:
+        return "action_spelling_correction"
+    
+    async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        message_exec = tracker.get_slot("last_intent")
+        if message_exec == 'query_knowledge_base':
+            message_exec = 'action_query_knowledge_base'
+        return [FollowupAction(message_exec), SlotSet("last_intent", "")] # Excecute previous intention

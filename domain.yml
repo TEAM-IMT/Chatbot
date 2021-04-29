@@ -23,8 +23,12 @@ intents:
   - rec_videos
   - rec_music
   - rec_cooking
+  - fix_mispelling
 
 entities:
+  - wrong_words
+  - correct_words
+  - last_intent
   - object_type
   - city
   - cities
@@ -40,6 +44,15 @@ entities:
   - Switzerland
 
 slots:
+  wrong_words:
+    type: list
+    influence_conversation: false
+  correct_words:
+    type: list
+    influence_conversation: false
+  last_intent:
+    type: text
+    influence_conversation: true
   object_type:
     type: text
     influence_conversation: false
@@ -76,9 +89,12 @@ slots:
   Switzerland:
     type: text
     influence_conversation: false
+  
 
 actions:
   - action_query_knowledge_base
+  - action_spelling_check
+  - action_spelling_correction
 
 responses:
   utter_greet:
