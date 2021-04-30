@@ -869,7 +869,7 @@ nlu:
 
 - intent: query_knowledge_base
   examples: |
-    - give me the list of [cities](object_type)
+    - give me the list of [cities](object_type:cities)
     - i would like the list of universities in [USA](object_type) please
     - i dont know which universities are in [France](object_type)
     - which universities can i find in [New York](city)?

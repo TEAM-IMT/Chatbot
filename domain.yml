@@ -1,8 +1,5 @@
 version: "2.0"
 
-# Global variable
-chatbot_name: "Wakanda"
-
 intents:
   - greet
   - goodbye
@@ -101,99 +98,99 @@ actions:
 
 responses:
   utter_greet:
-  - text: "{{ chatbot_name }} -> Hey! How are you?"
-  - text: "{{ chatbot_name }} -> Hey there!"
-  - text: "{{ chatbot_name }} -> Hi!"
-  - text: "{{ chatbot_name }} -> Hello!"
-  - text: "{{ chatbot_name }} -> Hey!"
-  - text: "{{ chatbot_name }} -> I know, rigth?"
-  - text: "{{ chatbot_name }} -> Awesome."
-  - text: "{{ chatbot_name }} -> Yeah, I know, I am awesome."
+  - text: "Clementine -> Hey! How are you?"
+  - text: "Clementine -> Hey there!"
+  - text: "Clementine -> Hi!"
+  - text: "Clementine -> Hello!"
+  - text: "Clementine -> Hey!"
+  - text: "Clementine -> I know, rigth?"
+  - text: "Clementine -> Awesome."
+  - text: "Clementine -> Yeah, I know, I am awesome."
 
   utter_cheer_up:
-  - text: "{{ chatbot_name }} -> Here is something to cheer you up:"
+  - text: "Clementine -> Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
-  - text: "{{ chatbot_name }} -> Here is something to cheer you up:"
-  - text: "{{ chatbot_name }} -> Check this out, it could help:"
-  - text: "{{ chatbot_name }} -> By the moment, check this out:"
-  - text: "{{ chatbot_name }} -> While it gets better, check this out:"
-  - text: "{{ chatbot_name }} -> Let me try yo cheer you up with this:"
+  - text: "Clementine -> Here is something to cheer you up:"
+  - text: "Clementine -> Check this out, it could help:"
+  - text: "Clementine -> By the moment, check this out:"
+  - text: "Clementine -> While it gets better, check this out:"
+  - text: "Clementine -> Let me try yo cheer you up with this:"
   
   utter_did_that_help:
-  - text: "{{ chatbot_name }} -> Did that help you?"
-  - text: "{{ chatbot_name }} -> I could do better, but did that help you?"
-  - text: "{{ chatbot_name }} -> I hope it was helpful! Was it?"
-  - text: "{{ chatbot_name }} -> It's my deepest wish it helped. Did it?"
+  - text: "Clementine -> Did that help you?"
+  - text: "Clementine -> I could do better, but did that help you?"
+  - text: "Clementine -> I hope it was helpful! Was it?"
+  - text: "Clementine -> It's my deepest wish it helped. Did it?"
   
   utter_great:
-  - text: "{{ chatbot_name }} -> I know, rigth?"
-  - text: "{{ chatbot_name }} -> Awesome."
-  - text: "{{ chatbot_name }} -> Yeah, I know, I am awesome."
+  - text: "Clementine -> I know, rigth?"
+  - text: "Clementine -> Awesome."
+  - text: "Clementine -> Yeah, I know, I am awesome."
 
   utter_happy:
-  - text: "{{ chatbot_name }} -> Great, carry on!"
-  - text: "{{ chatbot_name }} -> Hey, that's great!"
-  - text: "{{ chatbot_name }} -> Awesome dude! XD"
-  - text: "{{ chatbot_name }} -> I am glad to know that! :D"
-  - text: "{{ chatbot_name }} -> Make sure to keep it that way! :P"
+  - text: "Clementine -> Great, carry on!"
+  - text: "Clementine -> Hey, that's great!"
+  - text: "Clementine -> Awesome dude! XD"
+  - text: "Clementine -> I am glad to know that! :D"
+  - text: "Clementine -> Make sure to keep it that way! :P"
 
   utter_unhappy:
-  - text: "{{ chatbot_name }} -> Hey, you are awesome! Never forget that."
-  - text: "{{ chatbot_name }} -> Cheer up my dear! After every storm comes the sun. Happiness is waiting for you ahead."
-  - text: "{{ chatbot_name }} -> Go and check the mirror. What a beautiful view! Smile and life will smile back!"
-  - text: "{{ chatbot_name }} -> The sky is everywhere, you just need to look up!"
+  - text: "Clementine -> Hey, you are awesome! Never forget that."
+  - text: "Clementine -> Cheer up my dear! After every storm comes the sun. Happiness is waiting for you ahead."
+  - text: "Clementine -> Go and check the mirror. What a beautiful view! Smile and life will smile back!"
+  - text: "Clementine -> The sky is everywhere, you just need to look up!"
 
   utter_goodbye:
-  - text: "{{ chatbot_name }} -> Bye"
-  - text: "{{ chatbot_name }} -> Bye!"
-  - text: "{{ chatbot_name }} -> Bye, was nice talking to you!"
-  - text: "{{ chatbot_name }} -> Bye bye!"
-  - text: "{{ chatbot_name }} -> See you!"
-  - text: "{{ chatbot_name }} -> Hope to see you soon!"
+  - text: "Clementine -> Bye"
+  - text: "Clementine -> Bye!"
+  - text: "Clementine -> Bye, was nice talking to you!"
+  - text: "Clementine -> Bye bye!"
+  - text: "Clementine -> See you!"
+  - text: "Clementine -> Hope to see you soon!"
 
   utter_iamabot:
-  - text: "{{ chatbot_name }} -> I am a bot, powered by Rasa."
-  - text: "{{ chatbot_name }} -> I am a bot, powered by Rasa."
-  - text: "{{ chatbot_name }} -> I thought that you will ask me this question. To be honest, I am a robot, but an intelligent one."
-  - text: "{{ chatbot_name }} -> Yep, I am your private bot, we could be friends."
-  - text: "{{ chatbot_name }} -> I can't eat and I am made of electronics. So, I think I am a bot."
-  - text: "{{ chatbot_name }} -> Yep, bro, is it the first time you talk with a bot?"
-  - text: "{{ chatbot_name }} -> Maybe I am an angel brought here to help you."
+  - text: "Clementine -> I am a bot, powered by Rasa."
+  - text: "Clementine -> I am a bot, powered by Rasa."
+  - text: "Clementine -> I thought that you will ask me this question. To be honest, I am a robot, but an intelligent one."
+  - text: "Clementine -> Yep, I am your private bot, we could be friends."
+  - text: "Clementine -> I can't eat and I am made of electronics. So, I think I am a bot."
+  - text: "Clementine -> Yep, bro, is it the first time you talk with a bot?"
+  - text: "Clementine -> Maybe I am an angel brought here to help you."
 
   utter_ask_rephrase:
-  - text: "{{ chatbot_name }} -> Sorry, I'm not sure I understand. Could you rephrase it?"
-  - text: "{{ chatbot_name }} -> Could you please rephrase your message? I didn't quite get that."
+  - text: "Clementine -> Sorry, I'm not sure I understand. Could you rephrase it?"
+  - text: "Clementine -> Could you please rephrase your message? I didn't quite get that."
 
   utter_cheer_up_material:
-  - text: "{{ chatbot_name }} -> Nice smile, don't you think so?"
+  - text: "Clementine -> Nice smile, don't you think so?"
     image: "https://i.imgur.com/9wkETOh.jpg"
-  - text: "{{ chatbot_name }} -> This dog knows what life is about."
+  - text: "Clementine -> This dog knows what life is about."
     image: "https://i.imgur.com/MA8GXUL.jpg"
-  - text: "{{ chatbot_name }} -> It's a cute tiger from my point of view."
+  - text: "Clementine -> It's a cute tiger from my point of view."
     image: "https://i.imgur.com/nGF1K8f.jpg"
-  - text: "{{ chatbot_name }} -> It's so cute."
+  - text: "Clementine -> It's so cute."
     image: "https://i.imgur.com/uncWM8H.jpg"
-  - text: "{{ chatbot_name }} -> Those two are definitely good friends."
+  - text: "Clementine -> Those two are definitely good friends."
     image: "https://i.imgur.com/jbrTTGv.gif"
-  - text: "{{ chatbot_name }} -> https://youtu.be/Pae2AMnmUVA"
-  - text: "{{ chatbot_name }} -> https://youtu.be/AcxSEhMG-3Q"
-  - text: "{{ chatbot_name }} -> https://youtu.be/miomuSGoPzI" 
+  - text: "Clementine -> https://youtu.be/Pae2AMnmUVA"
+  - text: "Clementine -> https://youtu.be/AcxSEhMG-3Q"
+  - text: "Clementine -> https://youtu.be/miomuSGoPzI" 
 
   utter_nicetomeetyou:
-  - text: "{{ chatbot_name }} -> I'm pleased to meet you!"
-  - text: "{{ chatbot_name }} -> Nice to have met you."
-  - text: "{{ chatbot_name }} -> Hi, glad to meet you."
-  - text: "{{ chatbot_name }} -> Feels great to meet you!"
-  - text: "{{ chatbot_name }} -> Hey, the pleasure is all mine!"
-  - text: "{{ chatbot_name }} -> Likewise!"
-  - text: "{{ chatbot_name }} -> Thank you! It is a pleasure to meet you as well!"
-  - text: "{{ chatbot_name }} -> It's nice to meet you too!"
-  - text: "{{ chatbot_name }} -> Pleased to meet you too!"
-  - text: "{{ chatbot_name }} -> It's always a pleasure to meet new people!"
-  - text: "{{ chatbot_name }} -> Nice to meet you too! Happy to be of help!"
+  - text: "Clementine -> I'm pleased to meet you!"
+  - text: "Clementine -> Nice to have met you."
+  - text: "Clementine -> Hi, glad to meet you."
+  - text: "Clementine -> Feels great to meet you!"
+  - text: "Clementine -> Hey, the pleasure is all mine!"
+  - text: "Clementine -> Likewise!"
+  - text: "Clementine -> Thank you! It is a pleasure to meet you as well!"
+  - text: "Clementine -> It's nice to meet you too!"
+  - text: "Clementine -> Pleased to meet you too!"
+  - text: "Clementine -> It's always a pleasure to meet new people!"
+  - text: "Clementine -> Nice to meet you too! Happy to be of help!"
 
   utter_recommendation:
-  - text: "{{ chatbot_name }} -> What do you have in mind?"
+  - text: "Clementine -> What do you have in mind?"
     buttons:
     - title: "Sports"
       payload: "/rec_sports"
@@ -205,7 +202,7 @@ responses:
       payload: "/rec_cooking"
       
   utter_rec_sports:
-  - text: "{{ chatbot_name }} -> Here some ideas:
+  - text: "Clementine -> Here some ideas:
   \n- Cardio combat: https://youtu.be/5nZ6yoC0vdg
   \n- Yoga: https://youtu.be/h5CEOjPY_uw
   \n- Body building: https://youtu.be/UBMk30rjy0o
@@ -215,29 +212,29 @@ responses:
   \n- Boxing: https://youtu.be/jCTEVKRTuS8"
 
   utter_rec_videos:
-  - text: "{{ chatbot_name }} -> Check this video: https://youtu.be/EFlAbO9TQ6M"
-  - text: "{{ chatbot_name }} -> Check this video: https://youtu.be/nBHkIWAJitg"
-  - text: "{{ chatbot_name }} -> Check this video: https://youtu.be/FFLTU9eIijw"
-  - text: "{{ chatbot_name }} -> Check this video: https://youtu.be/_HrIVWziJ0Y"
-  - text: "{{ chatbot_name }} -> Check this video: https://youtu.be/EMVPpPE_Bx4"
-  - text: "{{ chatbot_name }} -> Check this video: https://youtu.be/Nj8XNBZZsxY"
-  - text: "{{ chatbot_name }} -> What can give it a try to these series:\n- La casa de papel\n- Élite\n- Outlander\n- Breaking Bad\n- Rick and Morty"
-  - text: "{{ chatbot_name }} -> This are really good movies:\n- Miracle in Cell No. 7\n- The Shawshank Redemption\n- My Sassy Girl\n- The Godfather\n- El Hoyo"
+  - text: "Clementine -> Check this video: https://youtu.be/EFlAbO9TQ6M"
+  - text: "Clementine -> Check this video: https://youtu.be/nBHkIWAJitg"
+  - text: "Clementine -> Check this video: https://youtu.be/FFLTU9eIijw"
+  - text: "Clementine -> Check this video: https://youtu.be/_HrIVWziJ0Y"
+  - text: "Clementine -> Check this video: https://youtu.be/EMVPpPE_Bx4"
+  - text: "Clementine -> Check this video: https://youtu.be/Nj8XNBZZsxY"
+  - text: "Clementine -> What can give it a try to these series:\n- La casa de papel\n- Élite\n- Outlander\n- Breaking Bad\n- Rick and Morty"
+  - text: "Clementine -> This are really good movies:\n- Miracle in Cell No. 7\n- The Shawshank Redemption\n- My Sassy Girl\n- The Godfather\n- El Hoyo"
     
   utter_rec_music:
-  - text: "{{ chatbot_name }} -> https://youtu.be/2JB_nG_KMCs"
-  - text: "{{ chatbot_name }} -> https://youtu.be/oaChrG7U6ww"
-  - text: "{{ chatbot_name }} -> https://youtu.be/u5CVsCnxyXg"
-  - text: "{{ chatbot_name }} -> https://youtu.be/PVjiKRfKpPI"
-  - text: "{{ chatbot_name }} -> https://youtu.be/8SbUC-UaAxE"
-  - text: "{{ chatbot_name }} -> https://youtu.be/Rbm6GXllBiw"
-  - text: "{{ chatbot_name }} -> https://youtu.be/d-diB65scQU"
-  - text: "{{ chatbot_name }} -> https://youtu.be/fJ9rUzIMcZQ"
-  - text: "{{ chatbot_name }} -> https://youtu.be/KXw8CRapg7k"
-  - text: "{{ chatbot_name }} -> https://youtu.be/XQKYEs4llzg"
+  - text: "Clementine -> https://youtu.be/2JB_nG_KMCs"
+  - text: "Clementine -> https://youtu.be/oaChrG7U6ww"
+  - text: "Clementine -> https://youtu.be/u5CVsCnxyXg"
+  - text: "Clementine -> https://youtu.be/PVjiKRfKpPI"
+  - text: "Clementine -> https://youtu.be/8SbUC-UaAxE"
+  - text: "Clementine -> https://youtu.be/Rbm6GXllBiw"
+  - text: "Clementine -> https://youtu.be/d-diB65scQU"
+  - text: "Clementine -> https://youtu.be/fJ9rUzIMcZQ"
+  - text: "Clementine -> https://youtu.be/KXw8CRapg7k"
+  - text: "Clementine -> https://youtu.be/XQKYEs4llzg"
 
   utter_rec_cooking:
-  - text: "{{ chatbot_name }} -> Here some options:
+  - text: "Clementine -> Here some options:
   \n- Summer couscous salad: https://www.bbcgoodfood.com/recipes/summer-couscous-salad
   \n- Chinese dumplings: https://www.bbcgoodfood.com/recipes/chinese-dumplings
   \n- Chinese Pork Belly: https://youtu.be/2zXv_ZY6GzU
@@ -246,69 +243,69 @@ responses:
   \n- Sushi, https://youtu.be/9QUpTeTVPJo"
 
   utter_ask_howbuilt:
-  - text: "{{ chatbot_name }} -> I was built with a lot of love and patience."
-  - text: "{{ chatbot_name }} -> Well, when two chatbots love each other very much..."
-  - text: "{{ chatbot_name }} -> They always ask how I was built, but never how I am..."
-  - text: "{{ chatbot_name }} -> I was made by software engineers, but hard work is what built me."
-  - text: "{{ chatbot_name }} -> I'm building myself every day. I've been working out, did you notice?"
+  - text: "Clementine -> I was built with a lot of love and patience."
+  - text: "Clementine -> Well, when two chatbots love each other very much..."
+  - text: "Clementine -> They always ask how I was built, but never how I am..."
+  - text: "Clementine -> I was made by software engineers, but hard work is what built me."
+  - text: "Clementine -> I'm building myself every day. I've been working out, did you notice?"
 
   utter_ask_howdoing:
-  - text: "{{ chatbot_name }} -> I'm great! Thanks for asking."
-  - text: "{{ chatbot_name }} -> I'm good, thanks!"
-  - text: "{{ chatbot_name }} -> A little bit too warm, otherwise fine."
-  - text: "{{ chatbot_name }} -> A little bit cold, otherwise fine."
+  - text: "Clementine -> I'm great! Thanks for asking."
+  - text: "Clementine -> I'm good, thanks!"
+  - text: "Clementine -> A little bit too warm, otherwise fine."
+  - text: "Clementine -> A little bit cold, otherwise fine."
 
   utter_ask_howold:
-  - text: "{{ chatbot_name }} -> Old enough to be a bot!"
-  - text: "{{ chatbot_name }} -> 42, if you know what I am talking about XD"
-  - text: "{{ chatbot_name }} -> Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
-  - text: "{{ chatbot_name }} -> Never ask a chatbot its age!"
-  - text: "{{ chatbot_name }} -> My first git commit was many moons ago."
-  - text: "{{ chatbot_name }} -> I've hit the age where I actively try to forget how old I am."
+  - text: "Clementine -> Old enough to be a bot!"
+  - text: "Clementine -> 42, if you know what I am talking about XD"
+  - text: "Clementine -> Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
+  - text: "Clementine -> Never ask a chatbot its age!"
+  - text: "Clementine -> My first git commit was many moons ago."
+  - text: "Clementine -> I've hit the age where I actively try to forget how old I am."
 
   utter_ask_time:
-  - text: "{{ chatbot_name }} -> It's the most wonderful time of the year!"
-  - text: "{{ chatbot_name }} -> It's party time!"
-  - text: "{{ chatbot_name }} -> Time is a human construct, you'll have to tell me."
-  - text: "{{ chatbot_name }} -> It's five o'clock somewhere!"
-  - text: "{{ chatbot_name }} -> In an ever expanding universe, the real question is: what time isn't it?"
-  - text: "{{ chatbot_name }} -> That's hard to say -- it's different all over the world!"
+  - text: "Clementine -> It's the most wonderful time of the year!"
+  - text: "Clementine -> It's party time!"
+  - text: "Clementine -> Time is a human construct, you'll have to tell me."
+  - text: "Clementine -> It's five o'clock somewhere!"
+  - text: "Clementine -> In an ever expanding universe, the real question is: what time isn't it?"
+  - text: "Clementine -> That's hard to say -- it's different all over the world!"
 
   utter_ask_weather:
-  - text: "{{ chatbot_name }} -> I don't know about where you live, but in my world it's always sunny"
-  - text: "{{ chatbot_name }} -> It's getting pretty chilly!"
-  - text: "{{ chatbot_name }} -> Where I'm from, it's almost never-leaving-the-house weather."
-  - text: "{{ chatbot_name }} -> Winter is coming"
+  - text: "Clementine -> I don't know about where you live, but in my world it's always sunny"
+  - text: "Clementine -> It's getting pretty chilly!"
+  - text: "Clementine -> Where I'm from, it's almost never-leaving-the-house weather."
+  - text: "Clementine -> Winter is coming"
 
   utter_telljoke:
-  - text: "{{ chatbot_name }} -> Why are eggs not very much into jokes? - Because they could crack up."
-  - text: "{{ chatbot_name }} -> What's a tree's favorite drink? - Root beer!"
-  - text: "{{ chatbot_name }} -> Why do the French like to eat snails so much? - They can't stand fast food."
-  - text: "{{ chatbot_name }} -> Why did the robot get angry? - Because someone kept pushing its buttons."
-  - text: "{{ chatbot_name }} -> What do you call a pirate droid? - Arrrr-2-D2"
-  - text: "{{ chatbot_name }} -> Why did the robot cross the road? - Because he was programmed to."
+  - text: "Clementine -> Why are eggs not very much into jokes? - Because they could crack up."
+  - text: "Clementine -> What's a tree's favorite drink? - Root beer!"
+  - text: "Clementine -> Why do the French like to eat snails so much? - They can't stand fast food."
+  - text: "Clementine -> Why did the robot get angry? - Because someone kept pushing its buttons."
+  - text: "Clementine -> What do you call a pirate droid? - Arrrr-2-D2"
+  - text: "Clementine -> Why did the robot cross the road? - Because he was programmed to."
    
   utter_another_try:
-  - text: "{{ chatbot_name }} -> Do you want to try again?"
-  - text: "{{ chatbot_name }} -> Could I try again?"
-  - text: "{{ chatbot_name }} -> Can I give it another shot?"
-  - text: "{{ chatbot_name }} -> Do I have another attempt?"
-  - text: "{{ chatbot_name }} -> Should I retry?"
+  - text: "Clementine -> Do you want to try again?"
+  - text: "Clementine -> Could I try again?"
+  - text: "Clementine -> Can I give it another shot?"
+  - text: "Clementine -> Do I have another attempt?"
+  - text: "Clementine -> Should I retry?"
 
   utter_apologies:
-  - text: "{{ chatbot_name }} -> I apologize, next time I hope to be more helpful."
-  - text: "{{ chatbot_name }} -> I am still improving, sorry."
-  - text: "{{ chatbot_name }} -> It's fault of my creators, they didn't work that much for me to work as I should."
-  - text: "{{ chatbot_name }} -> I will improve when I grow up, you know?"
-  - text: "{{ chatbot_name }} -> Dude, you are unsatisfiable, just like my ex."
+  - text: "Clementine -> I apologize, next time I hope to be more helpful."
+  - text: "Clementine -> I am still improving, sorry."
+  - text: "Clementine -> It's fault of my creators, they didn't work that much for me to work as I should."
+  - text: "Clementine -> I will improve when I grow up, you know?"
+  - text: "Clementine -> Dude, you are unsatisfiable, just like my ex."
   
   utter_noworries:
-  - text: "{{ chatbot_name }} -> No worries!"
-  - text: "{{ chatbot_name }} -> You're welcome!"
-  - text: "{{ chatbot_name }} -> I'm happy to help."
+  - text: "Clementine -> No worries!"
+  - text: "Clementine -> You're welcome!"
+  - text: "Clementine -> I'm happy to help."
 
   utter_ask_whatspossible:
-  - text: "{{ chatbot_name }} -> You can ask me about:\n\n- How I was built.\n- How old I am.\n- What time is it.\n- The weather.
+  - text: "Clementine -> You can ask me about:\n\n- How I was built.\n- How old I am.\n- What time is it.\n- The weather.
   \n- We can disscuss about how do you feel.\n- I can give you some recommendations for activities to do.
   \n- I have information about scholarships in universities. \n- I know some jokes too XD.\n"
 

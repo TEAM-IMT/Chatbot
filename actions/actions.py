@@ -14,7 +14,7 @@ from typing import Text, Dict, List, Any
 from rasa_sdk import utils, Action, Tracker
 import asyncio
 
-chatbot_name = 'Wakanda'
+chatbot_name = 'Clementine'
 
 class ActionMyKB(ActionQueryKnowledgeBase):
     def __init__(self):
@@ -82,16 +82,23 @@ class ActionMyKB(ActionQueryKnowledgeBase):
 class ActionSpellingCheck(Action):
     def name(self) -> Text:
         return "action_spelling_check"
+        #dispatcher.utter_button_message 
     
     async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        buttons = []
         wrong_words = tracker.get_slot('wrong_words')[0]
         correct_words = tracker.get_slot('correct_words')[0]
         if len(wrong_words) > 0: # List of words to fix
+            intent = "/" + tracker.get_slot("last_intent")
+            if intent == '/query_knowledge_base': intent = '/action_query_knowledge_base'
+            print("\n", intent)
             print(wrong_words, len(wrong_words))
             print(correct_words, len(correct_words))
+            buttons.append({"title": "yes", "payload": intent})
+            buttons.append({"title": "no", "payload": "utter_ask_rephrase"})
             message = " and ".join(["{} ({})".format(w[0], w[1]) for w in zip(correct_words, wrong_words)])
-            dispatcher.utter_message(text = f"{chatbot_name} -> I don't get it. Did you mean {message} ?")
-            return [SlotSet("wrong_words", []), SlotSet("correct_words", []),] # Erase parameters
+            dispatcher.utter_message(text = f"{chatbot_name} -> I don't get it. Did you mean {message} ?", buttons = buttons)
+            return [SlotSet("wrong_words", []), SlotSet("correct_words", []), SlotSet("last_intent", []),] # Erase parameters
         return []
 
 class ActionSpellingCorrection(Action):
