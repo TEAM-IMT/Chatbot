@@ -989,12 +989,15 @@ nlu:
     - Give [finantial options](attribute:scholarship) of the [last one](mention:LAST)
     - Give me more [information](attribute:link) about [Imperial College London](UK)
     - Tell me some [careers](attribute) options in [Imperial College London](UK)
-    - what are the requirements for apply for the [2] (mention:2) university? 
-    - what are the requirements for apply for the [second] (mention:2) university? 
-    - Can you give me the top ranking of universities in [New York] (city)?
+    - I would like to know [information](attribute:link) about the [2](mention:2) university? 
+    - what are the requirements for apply for the [second](mention:2) university? 
+    - Can you give me the top ranking of universities in [New York](city)?
     - Could I see universities in [Barcelona](city)?
-    - How many I must pay to go [Paris Sciences et Lettres Research University] (object_type:France)?
-    - how expensive is [PSL] (object_type:France)?
+    - How many I must pay to go [Paris Sciences et Lettres Research University](France)?
+    - how [expensive](attribute:cost) is [PSL](France)?
+    - Do you have information about universities in [Paris](city) [France](object_type) ?
+    - I just want to see universities in [Paris](city) [France](object_type) ?
+    
     
 
 - lookup: USA
@@ -1090,6 +1093,7 @@ nlu:
     - pay
     - paying
     - paid
+    - expensive
 
 - synonym: scholarship
   examples: |
