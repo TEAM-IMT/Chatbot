@@ -993,7 +993,7 @@ nlu:
     - what are the requirements for apply for the [second](mention:2) university? 
     - Can you give me the top ranking of universities in [New York](city)?
     - Could I see universities in [Barcelona](city)?
-    - How many I must pay to go [Paris Sciences et Lettres Research University](France)?
+    - How many I must [pay](attribute:cost) to go [Paris Sciences et Lettres Research University](France)?
     - how [expensive](attribute:cost) is [PSL](France)?
     - Do you have information about universities in [Paris](city) [France](object_type) ?
     - I just want to see universities in [Paris](city) [France](object_type) ?
@@ -1024,7 +1024,93 @@ nlu:
     - How [much](attribute:cost) I have to pay in the [third one](mention:3) 
     - What's the [ranking](attribute) of [Sorbonne University](France)
     - [position](attribute:ranking) of [third one](mention:3)
-    -[ranking](attribute) of [3](mention:3) 
+    - [ranking](attribute) of [3](mention:3) 
+    - Show me the universities in [Rennes](city) [France](object_type)
+    - list the universities in [Brest](city) [France](object_type)
+    - List the colleges in [Brest](city) [France](object_type)
+    - Show me the [cost](attribute) of the [1](mention:1)
+    - Show me [its](mention) [ranking](attribute)
+    - Do [they](mention) have [aids](attribute:scholarship) ?
+    - Give me the [link](attribute) of the main page
+    - Show me the [cost](attribute) of the [2](mention:2)
+    - I would like to know the [ranking](attribute) of the [first one](mention:1)
+    - I would like to know the [ranking](attribute) of the [1](mention:1)
+    - Can i have the [ranking](attribute) of the [second one](mention:2)
+    - Can i have the [ranking](attribute) of the [2](mention:2)
+    - Give me more [information](attribute:link) about the [second one](mention:2)
+    - show me the [web page](attribute:link) of the [first one](mention:1)
+    - can i have the [page](attribute:link) of the [third one](mention:3)
+    - [web page](attribute:link) of the [last](mention:LAST)
+    - Give me more [information](attribute:link) about the [2](mention:2)
+    - show me the [web page](attribute:link) of the [1](mention:1)
+    - can i have the [page](attribute:link) of the [4](mention:4)
+    - [web page](attribute:link) of the [any](mention:ANY)
+    - Does the [first](mention:1) have [aids](attribute:scholarship) ?
+    - Can you give me [finantial aids](attribute:scholarship) of the [second](mention:2)
+    - Where is [located](attribute:city) the [3](mention:3) ?
+    - Give me the [location](attribute:city) of the [1](mention:1)
+    - Give me the [city](attribute:city) of the [last one](mention:LAST)
+    - [city](attribute) of the [4](mention:4)
+    - [careers](attribute) of [any one](mention:ANY)
+    - Show me the [courses](attribute:careers) of the [first one](mention:1)
+    - I would like to know the [specialities](attribute:careers) of the [second one](mention:2)
+    - Give me the [careers](attribute) of the [third one](mention:3)
+    - [careers](attribute) of the [1](mention:1)
+    - Show me the [courses](attribute:careers) of the [2](mention:2)
+    - I would like to know the [specialities](attribute:careers) of the [3](mention:3)
+    - Give me the [careers](attribute) of the [last one](mention:LAST)
+    - [careers](attribute) of [2](mention:2) 
+    - [careers](attribute) of [second](mention:2)
+    - [careers](attribute) of [4](mention:4)
+    - Can you show me [its](mention) [web page](attribute:link)
+    - Do you have the [web page](attribute:link) of [IMT Atlantique](France)
+    - Give me more [information](attribute:link) about [University of Rennes 1](France)
+    - Show me the [page](attribute:link) of [National Institute for Applied Sciences, Rennes](France)
+    - [web page](attribute:link) of [Universite de Bretagne Occidentale](France)
+    - Give me [information](attribute:link) about [UBO](France)
+    - Which [specialities](attribute) does [it](mention) have ?
+    - what [careers](attribute) are there in [University of Rennes 1](France) ?
+    - what [careers](attribute) can i find in [IMT Atlantique](France) university?
+    - list of [careers](attribute) in [second](mention:2)
+    - tell me all [careers](attribute) in [UBO](France)
+    - show [careers](attribute) in [Universite de Bretagne Occidentale](France), please
+    - Do you have the [specialities](attribute:careers) of [National Institute for Applied Sciences, Rennes](France) ?
+    - What is the [link](attribute) of the [UBO](France) ?
+    - give me the [link](attribute) of [Universite de Bretagne Occidentale](France)
+    - in the [first](mention:1), which is the [link](attribute) ?
+    - where can I get [information](attribute:link) of [National Institute for Applied Sciences, Rennes](France)
+    - i would like to know  more [information](attribute:link) about [IMT Atlantique](France)
+    - please, [tell me more](attribute:link) about [University of Rennes 1](France)
+    - Show me the [place](attribute:ranking) of [National Institute for Applied Sciences, Rennes](France)
+    - Which is the [ranking](attribute:ranking) of [UBO](France)
+    - do you know the [ranking](attribute) of [University of Rennes 1](France) ?
+    - please show me the [ranking](attribute) of [Universite de Bretagne Occidentale](France)?
+    - in which [position](attribute:ranking) is the [IMT Atlantique](France)?
+    - Show me [finantial options](attribute:scholarship) in [IMT Atlantique](France)
+    - Does [Universite de Bretagne Occidentale](France) have [aids](attribute:scholarship)
+    - Does the [University of Rennes 1](France) offer [scholarships](attribute:scholarship)
+    - is there any [financing](attribute:scholarship) in the [National Institute for Applied Sciences, Rennes](France)?
+    - what are the [costs](attribute:cost) if i want to go to [IMT Atlantique](France)?
+    - show me the [costs](attribute:cost) of [Universite de Bretagne Occidentale](France)
+    - where can i find the [costs](attribute:cost) of [National Institute for Applied Sciences, Rennes](France)?
+    - i want to go to [University of Rennes 1](France), how much should I [save](attribute:cost)?
+    - how much do i have to [pay](attribute:cost) in [UBO](France)?
+    - how much it [costs](attribute:cost) to go to [IMT Atlantique](France) ?
+    - how much it [costs](attribute:cost) to go to [National Institute for Applied Sciences, Rennes](France)?
+    - How much it [cost](attribute:cost) to go [there](mention) ?
+    - Where is [located](attribute:city) the [IMT Atlantique](France) ?
+    - Which is the [city](attribute) of [National Institute for Applied Sciences, Rennes](France)?
+    - Tell me the [city](attribute) [UBO](France)?
+    - Give me the [location](attribute:city) [Universite de Bretagne Occidentale](France)?
+    - Where is [located](attribute:city) the [University of Rennes 1](France)?
+    - Give me [its](mention) [location](attribute:city)
+    - Tell me [its](mention) [city](attribute:city)
+    - Tell me the [city](attribute:city) of [this one](mention)
+    
+    
+    
+    
+    
 
     
     
@@ -1124,15 +1210,31 @@ nlu:
     - paid
     - expensive
     - fees
-    -much
+    - much
 
 - synonym: scholarship
   examples: |
     - financing
     - finance
+    - aids
+    - aid
+    - finantial aids
+    
+- synonym: link
+  examples: |
+    - information
+    - address
+    - web page
+    - page
+    
+- synonym: city
+  examples: |
+    - location
+    - located
     
 - synonym: careers
   examples: |
     - courses
+    - specialities
     
 
