@@ -172,6 +172,11 @@ stories:
   steps:
   - intent: fix_mispelling
   - action: action_spelling_check
+  - or:
+      - intent: affirm
+      - intent: mood_great
+      - intent: thanks
+  - action: action_spelling_correction
 
 - story: Try to correct user's misspelling failed
   steps:

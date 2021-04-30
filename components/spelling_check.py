@@ -1,6 +1,6 @@
 
 # Take from https://nicks-cheke44.medium.com/building-rasa-nlu-custom-component-for-spell-checking-in-incoming-message-742527b35d27
-import typing
+import typing, re
 from typing import Any, Optional, Text, Dict, List, Type
 
 from rasa.nlu.components import Component
@@ -31,18 +31,18 @@ class SpellingAnalyzer(Component):
         """Retrieve the text message, do spelling correction word by word,
         then append all the words and form the sentence,
         pass it to next component of pipeline"""
-        try: textdata = message.data['text'].split()
+        try: textdata = re.sub("[^\s\w']", '', message.data['text']).split() # Fix bug with punctuation
         except: textdata = ['pass']
         wrong_words = list(spell.unknown(textdata)) # Get misspelling words
         if len(wrong_words) > 0:
             intent_name = message.get('intent')['name']
-            entities = message.get('entities') + [
+            entities = message.get('entities') + [ # New entities + previous
                 {"value": wrong_words, "confidence": 1.0, "entity": "wrong_words", "extractor": "spell_analyzer"},
                 {"value": [spell.correction(w) for w in wrong_words], "confidence": 1.0, "entity": "correct_words", "extractor": "spell_analyzer"},
                 {"value": intent_name, "confidence": 1.0, "entity": "last_intent", "extractor": "spell_analyzer"}
             ]
             intent = {"id": hash("fix_mispelling"), "name": "fix_mispelling", "confidence": 1.0}
-            intent_ranking = message.get('intent_ranking') + [intent]
+            intent_ranking = message.get('intent_ranking') + [intent] # Add new intention
             message.set(INTENT, intent, add_to_output = True)
             message.set("intent_ranking", intent_ranking, add_to_output = True)
             message.set("entities", entities, add_to_output = True)

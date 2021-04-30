@@ -39,12 +39,12 @@ class ActionMyKB(ActionQueryKnowledgeBase):
                 dispatcher.utter_message(text = f"{chatbot_name} -> Sure. The {attribute_name} of '{object_name}' is '{attribute_value}'.")
             elif attribute_name in ['careers', 'link', 'scholarship']:
                 dispatcher.utter_message(text = f"{chatbot_name} -> Let me check (...). ")
-                dispatcher.utter_message(text = f"You can get all the info in : '{attribute_value}'.")
+                dispatcher.utter_message(text = f"You can get all the info in : ", attachment = attribute_value)
             elif attribute_name in ['ranking']:
                 dispatcher.utter_message(text = f"{chatbot_name} -> Ok. '{object_name}' is the '{attribute_value}' best in the world. Awesome!")
             elif attribute_name in ['cost']:
                 if 'http' in attribute_value and '//' in attribute_value:
-                    dispatcher.utter_message(text = f"{chatbot_name} -> All the information about costs of {object_name} is in the following link: {attribute_value}")
+                    dispatcher.utter_message(text = f"{chatbot_name} -> All the information about costs of {object_name} is in the following link : ", attachment = attribute_value)
                 else:
                     dispatcher.utter_message(text = f"{chatbot_name} -> The costs of '{object_name}' are: '{attribute_value}'.")
             else:    
@@ -65,7 +65,7 @@ class ActionMyKB(ActionQueryKnowledgeBase):
         """
         if objects:
             dispatcher.utter_message(
-                text=f"{chatbot_name} -> Found the following list of universities for '{object_type}':"
+                text=f"{chatbot_name} -> Found the following list of universities in '{object_type}':"
             )
 
             repr_function = await utils.call_potential_coroutine(
@@ -88,25 +88,24 @@ class ActionSpellingCheck(Action):
         buttons = []
         wrong_words = tracker.get_slot('wrong_words')[0]
         correct_words = tracker.get_slot('correct_words')[0]
-        if len(wrong_words) > 0: # List of words to fix
-            intent = "/" + tracker.get_slot("last_intent")
-            if intent == '/query_knowledge_base': intent = '/action_query_knowledge_base'
-            print("\n", intent)
-            print(wrong_words, len(wrong_words))
-            print(correct_words, len(correct_words))
+        intent = "/" + tracker.get_slot("last_intent")
+        if len(wrong_words) > 0 and intent != '/nlu_fallback': # List of words to fix or message identified
+            print(wrong_words, correct_words, "\n")
             buttons.append({"title": "yes", "payload": intent})
-            buttons.append({"title": "no", "payload": "utter_ask_rephrase"})
-            message = " and ".join(["{} ({})".format(w[0], w[1]) for w in zip(correct_words, wrong_words)])
+            buttons.append({"title": "no", "payload": "/deny"})
+            buttons.append({"title": "really no. But run the action xD", "payload": intent})
+            message = " and ".join(["'{}' (you wrote '{}')".format(w[0], w[1]) for w in zip(correct_words, wrong_words)])
             dispatcher.utter_message(text = f"{chatbot_name} -> I don't get it. Did you mean {message} ?", buttons = buttons)
-            return [SlotSet("wrong_words", []), SlotSet("correct_words", []), SlotSet("last_intent", []),] # Erase parameters
-        return []
+        elif intent == '/nlu_fallback':
+            dispatcher.utter_message(response = "utter_ask_rephrase")
+        return [SlotSet("wrong_words", []), SlotSet("correct_words", []), SlotSet("last_intent", []),] # Erase parameters
 
-class ActionSpellingCorrection(Action):
-    def name(self) -> Text:
-        return "action_spelling_correction"
+# class ActionSpellingCorrection(Action):
+#     def name(self) -> Text:
+#         return "action_spelling_correction"
     
-    async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        message_exec = tracker.get_slot("last_intent")
-        if message_exec == 'query_knowledge_base':
-            message_exec = 'action_query_knowledge_base'
-        return [FollowupAction(message_exec), SlotSet("last_intent", "")] # Excecute previous intention
+#     async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#         message_exec = tracker.get_slot("last_intent")
+#         if message_exec == 'query_knowledge_base':
+#             message_exec = 'action_query_knowledge_base'
+#         return [FollowupAction(message_exec), SlotSet("last_intent", "")] # Excecute previous intention
