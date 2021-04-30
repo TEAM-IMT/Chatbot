@@ -957,7 +957,7 @@ nlu:
     - What about [Columbia University](USA)?
     - Give me information about [National Institute for Applied Sciences, Rennes](France)
     - Tell me about [University of Salford](UK)
-    - Talk about [Technische Universität Berlin (TU Berlin)](Germany)
+    - Talk about [Technische Universität Berlin](Germany)
     - Tell me about [Universitat de Valencia](Spain)
     - Display information about [University of Zurichy](Switzerland)
     - List universities in [California](city) [USA](object_type)
@@ -1031,7 +1031,7 @@ nlu:
     - Technical University of Munich
     - Ludwig-Maximilians-Universität München
     - Humboldt-Universität zu Berlin
-    - Technische Universität Berlin (TU Berlin)
+    - Technische Universität Berlin
 
 - lookup: Spain
   examples: |
