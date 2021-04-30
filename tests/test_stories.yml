@@ -8,6 +8,8 @@ stories:
       hello there!
     intent: greet
   - action: utter_greet
+  - action: utter_ask_whatspossible
+  
   - user: |
       amazing
     intent: mood_great
@@ -19,6 +21,7 @@ stories:
       hello there!
     intent: greet
   - action: utter_greet
+  - action: utter_ask_whatspossible
   - user: |
       amazing
     intent: mood_great
@@ -34,6 +37,7 @@ stories:
       hello
     intent: greet
   - action: utter_greet
+  - action: utter_ask_whatspossible
   - user: |
       not good
     intent: mood_unhappy
@@ -50,6 +54,7 @@ stories:
       hello
     intent: greet
   - action: utter_greet
+  - action: utter_ask_whatspossible
   - user: |
       not good
     intent: mood_unhappy
@@ -62,6 +67,7 @@ stories:
       hi
     intent: greet
   - action: utter_greet
+  - action: utter_ask_whatspossible
   - user: |
       very terrible
     intent: mood_unhappy
