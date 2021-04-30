@@ -14,7 +14,7 @@ from typing import Text, Dict, List, Any
 from rasa_sdk import utils, Action, Tracker
 import asyncio
 
-chatbot_name = 'Wakanda for ever'
+chatbot_name = 'Wakanda'
 
 class ActionMyKB(ActionQueryKnowledgeBase):
     def __init__(self):

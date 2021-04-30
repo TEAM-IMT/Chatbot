@@ -57,11 +57,7 @@ stories:
   - action: utter_did_that_help
   - user: |
       not really
-    intent: deny
-  - action: utter_goodbye
-
-- story: sad path 3
-  steps:
+    intent: deny+
   - user: |
       hi
     intent: greet
