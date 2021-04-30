@@ -870,10 +870,10 @@ nlu:
 - intent: query_knowledge_base
   examples: |
     - give me the list of [cities](object_type)
-    - i would kike the list of universities in [USA](object_type) please
+    - i would like the list of universities in [USA](object_type) please
     - i dont know which universities are in [France](object_type)
     - which universities can i find in [New York](city)?
-    - give me the list of universities(name)[Spain](object_type) in [Barcelona](city)
+    - give me the list of universities in [Barcelona](city) [Spain](object_type) 
     - list of universities in [Germany](object_type)
     - in which [city](attribute) is [EPFL](Switzerland)?
     - in which [city](attribute) is [this](mention)?
@@ -916,7 +916,7 @@ nlu:
     - Give me some [countries](object_type) to study 
     - List of [countries](object_type) to study
     - cite some [countries](object_type) to study
-    - Give me some universities [USA](object_type)
+    - Give me some universities in [USA](object_type)
     - List some universities [UK](object_type)
     - What universities do you have in [Switzerland](object_type) ?
     - Give me some places to study in [Spain](object_type)
@@ -924,7 +924,7 @@ nlu:
     - Colleges in [France](object_type)
     - Give me some colleges in [USA](object_type)
     - List of colleges in [France](object_type)
-    - How much it [cost](attribute) to study in the [firts one](mention:1)
+    - How much it [cost](attribute) to study in the [first one](mention:1)
     - Give me the [cost](attribute) of the [second one](mention:2)
     - [Cost](attribute:cost) of the [third one](mention:3)
     - How much it [cost](attribute) to study in the [third one](mention:3)
@@ -941,7 +941,7 @@ nlu:
     - Give me [information](attribute:link) about [any one](mention:ANY) ?
     - In which [city](attribute) is the [second one](mention:2) ?
     - Where is [located](attribute:city) the [third one](mention:3) ?
-    - Give me the [location](attribute:city) of the [firts one](mention:1)
+    - Give me the [location](attribute:city) of the [first one](mention:1)
     - Give me the [location](attribute:city) of the [last one](mention:LAST)
     - [city](attribute) of the [fourth](mention:4)
     - [city](attribute) of [any one](mention:ANY)
@@ -958,10 +958,10 @@ nlu:
     - Give me information about [National Institute for Applied Sciences, Rennes](France)
     - Tell me about [University of Salford](UK)
     - Talk about [Technische Universität Berlin (TU Berlin)](Germany)
-    - Tell me about [Universitat de Valencia](Valencia)
+    - Tell me about [Universitat de Valencia](Spain)
     - Display information about [University of Zurichy](Switzerland)
     - List universities in [California](city) [USA](object_type)
-    - I want to study in [Lausanne](city)[Switzerland](object_type)
+    - I want to study in [Lausanne](city) [Switzerland](object_type)
     - Give me options to study in [Valencia](city) [Spain](object_type)
     - Do you have information about universities in [Madrid](city) [Spain](object_type) ?
     - I want to go to study in [Berlin](city) [Germany](object_type)
