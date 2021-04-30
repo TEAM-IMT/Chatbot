@@ -7,12 +7,12 @@
 from rasa_sdk.knowledge_base.storage import InMemoryKnowledgeBase
 from rasa_sdk.knowledge_base.actions import ActionQueryKnowledgeBase
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet, UserUttered, BotUttered, UserUtteranceReverted, FollowupAction
-from rasa.core.actions.action import action_for_name_or_text
-from rasa.core.interpreter import RasaNLUInterpreter, RasaNLUHttpInterpreter
+from rasa_sdk.events import SlotSet, FollowupAction
 from typing import Text, Dict, List, Any
 from rasa_sdk import utils, Action, Tracker
-import asyncio
+
+from spellchecker import SpellChecker
+spell = SpellChecker()
 
 chatbot_name = 'Clementine'
 
@@ -85,10 +85,22 @@ class ActionSpellingCheck(Action):
         #dispatcher.utter_button_message 
     
     async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        buttons = []
+        buttons = [] 
+        # Erase parameters at the end
+        change_slots = [SlotSet("wrong_words", []), SlotSet("correct_words", []), SlotSet("last_intent", []),]
+
+        # Get info words wrong
         wrong_words = tracker.get_slot('wrong_words')[0]
         correct_words = tracker.get_slot('correct_words')[0]
         intent = "/" + tracker.get_slot("last_intent")
+        if intent == "/query_knowledge_base": # Fix attributes spellmissing
+            for key, value in tracker.slots.items(): # Try to fix some words
+                try: 
+                    fix_word = spell.correction(value)
+                    if fix_word != value: 
+                        print("[INFO]: {}:{}".format(value, fix_word))
+                        change_slots.append(SlotSet(key, fix_word))
+                except: pass
         if len(wrong_words) > 0 and intent != '/nlu_fallback': # List of words to fix or message identified
             print(wrong_words, correct_words, "\n")
             buttons.append({"title": "yes", "payload": intent})
@@ -98,7 +110,7 @@ class ActionSpellingCheck(Action):
             dispatcher.utter_message(text = f"{chatbot_name} -> I don't get it. Did you mean {message} ?", buttons = buttons)
         elif intent == '/nlu_fallback':
             dispatcher.utter_message(response = "utter_ask_rephrase")
-        return [SlotSet("wrong_words", []), SlotSet("correct_words", []), SlotSet("last_intent", []),] # Erase parameters
+        return change_slots
 
 # class ActionSpellingCorrection(Action):
 #     def name(self) -> Text:

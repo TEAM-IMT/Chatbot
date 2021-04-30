@@ -96,11 +96,11 @@ actions:
 
 responses:
   utter_greet:
-  - text: "Clementine -> Hey! How are you?"
-  - text: "Clementine -> Hey there!"
-  - text: "Clementine -> Hi!"
-  - text: "Clementine -> Hello!"
-  - text: "Clementine -> Hey!"
+  - text: "Clementine -> Hey! How are you? My name is Clementine."
+  - text: "Clementine -> Hey there! My name is Clementine."
+  - text: "Clementine -> Hi! I'm Clementine."
+  - text: "Clementine -> Hello! I'm Clementine."
+  - text: "Clementine -> Hey! My name is Clementine."
 
   utter_cheer_up:
   - text: "Clementine -> Here is something to cheer you up:"
@@ -302,11 +302,11 @@ responses:
   utter_ask_whatspossible:
   - text: "Clementine -> Can ask me about:\n\n- How I was built.\n- How old I am.\n- What time is it.\n- The weather.
     \n- We can disscuss about how do you feel.\n- I can give you some recommendations for activities to do.
-    \n- I know some jokes too XD.\n And finally, ask me questions about universities in the world! 
+    \n- I know some jokes too XD.\n- And finally, ask me questions about universities in the world! 
     To start, ask me something like that: 'tell me more about universities in France' or 'what universities are in New York, USA'. 
     Then, I can give you information about: 
-    \n\t city \n\t careers \n\t link \n\t ranking \n\t scholarship \n\t cost
-    Some examples: 'What is the costs to study in Universidad Autonoma de Madrid' or just 'Give me the careers of the last one' \n Give it a try! :D !!"
+    \n\t city, careers, link, ranking, scholarship and cost. \n  Some examples: 'What is the costs to study in Universidad Autonoma de Madrid' 
+    or just 'Give me the careers of the last one' \n Give it a try! :D !!"
   
 session_config:
   session_expiration_time: 60
