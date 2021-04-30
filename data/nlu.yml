@@ -997,6 +997,35 @@ nlu:
     - how [expensive](attribute:cost) is [PSL](France)?
     - Do you have information about universities in [Paris](city) [France](object_type) ?
     - I just want to see universities in [Paris](city) [France](object_type) ?
+    - I would like to know information about [scholarships](attribute:scholarship) of [Paris Sciences et Lettres Research University](France)
+    - Which is the [position](attribute:ranking) of [PSL](France)
+    - Give me information about the [1](mention:1) university
+    - I would like to know more [information](attribute:link)of [PSL](France) university
+    - Tell me the [ranking](attribute) of [Paris Sciences et Lettres Research University](France)
+    - What is the [position](attribute:ranking) of [PSL](France)
+    - Tell me the [courses](attribute:careers) in [PSL](France)
+    - Can you tell me information about universities in [Paris](city) [France](object_type) 
+    - How much are the [fees](attribute:cost) in [Paris Sciences et Lettres Research University](France) ?
+    - How much are the [fees](attribute:cost) of [1](mention:1)
+    - How much [cost](attribute) the [first](mention:1) university
+    - Show me the universities in [Paris](city) [France](object_type) 
+    - Can you give [information](attribute:link) of [Ecole Polytechnique](France)
+    - I would like to know [information](attribute:link) of the [2](mention:2)
+    - You can [tell me more](attribute:link) about the [second](mention:2) university
+    - How [much](attribute:cost) I have to pay in the [Ecole Polytechnique](France) university
+    - What is the [ranking](attribute) of [Ecole Polytechnique](France)
+    - [ranking](attribute) of [2](mention:2) 
+    - [ranking](attribute) of [second one](mention:2)
+    - [ranking](attribute) of [second](mention:2) 
+    - What [do you know](attribute:link) about the [Sorbonne University](France)
+    - Could you tell me the [fees](attribute:cost) in [Sorbonne University](France)
+    - Can I have the [cost](attribute) of the [3](mention:3)
+    - How [much](attribute:cost) I have to pay in the [third](mention:3) university
+    - How [much](attribute:cost) I have to pay in the [third one](mention:3) 
+    - What's the [ranking](attribute) of [Sorbonne University](France)
+    - [position](attribute:ranking) of [third one](mention:3)
+    -[ranking](attribute) of [3](mention:3) 
+
     
     
 
@@ -1094,8 +1123,16 @@ nlu:
     - paying
     - paid
     - expensive
+    - fees
+    -much
 
 - synonym: scholarship
   examples: |
     - financing
     - finance
+    
+- synonym: careers
+  examples: |
+    - courses
+    
+
