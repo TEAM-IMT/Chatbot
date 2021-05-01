@@ -1000,7 +1000,7 @@ nlu:
     - I would like to know information about [scholarships](attribute:scholarship) of [Paris Sciences et Lettres Research University](France)
     - Which is the [position](attribute:ranking) of [PSL](France)
     - Give me information about the [1](mention:1) university
-    - I would like to know more [information](attribute:link)of [PSL](France) university
+    - I would like to know more [information](attribute:link) of [PSL](France) university
     - Tell me the [ranking](attribute) of [Paris Sciences et Lettres Research University](France)
     - What is the [position](attribute:ranking) of [PSL](France)
     - Tell me the [courses](attribute:careers) in [PSL](France)
@@ -1106,10 +1106,10 @@ nlu:
     - Give me [its](mention) [location](attribute:city)
     - Tell me [its](mention) [city](attribute:city)
     - Tell me the [city](attribute:city) of [this one](mention)
-    
-    
-    
-    
+    - Give me more [information](attribute:link) about the universities in France (attribute)
+    - Universities in [Paris](city) [France](object_type)
+    - Tell me universities in [Paris](city) [France](object_type)
+    - Universities in [Paris](city) [France](object_type)
     
 
     
