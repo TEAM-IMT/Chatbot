@@ -306,7 +306,7 @@ responses:
     To start, ask me something like that: 'tell me more about universities in France' or 'what universities are in New York, USA'. 
     Then, I can give you information about: 
     \n\t city, careers, link, ranking, scholarship and cost. \n  Some examples: 'What is the costs to study in Universidad Autonoma de Madrid' 
-    or just 'Give me the careers of the last one' \n Give it a try! :D !!"
+    or just 'Give me the careers of the last one' \n  Give it a try! :D !!"
   
 session_config:
   session_expiration_time: 60
