@@ -145,7 +145,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template) for providing the repository README template. 
-* [UE TAL 2020 Chatbot](https://github.com/valeporti/imt_chatbot) for serving as the basis of the project, as well as providing examples of intentions.
+<!-- * [UE TAL 2020 Chatbot](https://github.com/valeporti/imt_chatbot) for serving as the basis of the project, as well as providing examples of intentions. -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
