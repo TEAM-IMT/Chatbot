@@ -15,15 +15,15 @@
     <img src="logo.png" alt="Logo" width="720" >
   </a>
 
-  <h3 align="center"> Chatbot </h3>
+  <h3 align="center"> Clementine (Chatbot) </h3>
 
   <p align="center">
-    Coming soon.
+    Implementation of chatbot in rasa to consult universities around the world
     <br />
     <a href="https://github.com/TatianaMoreno47/Chatbot"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/TatianaMoreno47/Chatbot">View Demo</a>
+    <a href="https://github.com/TatianaMoreno47/Chatbot/blob/Main/demo.mp4">View Demo</a>
     ·
     <a href="https://github.com/TatianaMoreno47/Chatbot/issues">Report Bug</a>
     ·
@@ -64,6 +64,7 @@ Proyecto to Chatbot with Rasa
 
 ### Built With
 * [rasa](https://rasa.com/)
+* [pyspellchecker](https://pyspellchecker.readthedocs.io/en/latest/quickstart.html)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -89,7 +90,25 @@ Install virtual environment with venv or conda.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-To complete
+If you want, you can train the model with the instruction
+```sh
+   rasa train
+   ```
+You can also download the pre-trained weights from the following link. Copy the file into the `models` folder. 
+
+Then, just run the actions-server:
+```sh
+   rasa run actions
+   ```
+And finally, start a new conversation with Clementine!
+```sh
+   rasa shell
+   ```
+
+For more information, see the following links:
+
+1. [Rasa framework](https://rasa.com/)
+2. [Knowledge Base Actions](https://rasa.com/docs/action-server/knowledge-bases/)
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -125,7 +144,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-[Best-README-Template](https://github.com/othneildrew/Best-README-Template) for providing the repository README template. 
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template) for providing the repository README template. 
+* [UE TAL 2020 Chatbot](https://github.com/valeporti/imt_chatbot) for serving as the basis of the project, as well as providing examples of intentions.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
