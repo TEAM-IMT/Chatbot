@@ -94,7 +94,7 @@ If you want, you can train the model with the instruction
 ```sh
    rasa train
    ```
-You can also download the pre-trained weights from the following link. Copy the file into the `models` folder. 
+You can also download the pre-trained weights from the following [link](https://drive.google.com/file/d/100WauINufg7QWqOoz8AMUC_hrCPDgfXD/view?usp=sharing). Copy the file into the `models` folder. 
 
 Then, just run the actions-server:
 ```sh
