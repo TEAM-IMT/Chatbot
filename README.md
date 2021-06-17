@@ -12,7 +12,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/TatianaMoreno47/Chatbot">
-    <img src="logo.png" alt="Logo" width="720" >
+    <img src="Presentation/logo.png" alt="Logo" width="720" >
   </a>
 
   <h3 align="center"> Clementine (Chatbot) </h3>
@@ -81,11 +81,11 @@ Install virtual environment with venv or conda.
    ```
 1. Clone the repo
    ```sh
-   git clone https://github.com/TatianaMoreno47/Chatbot
+   git clone https://github.com/TEAM-IMT/Chatbot.git
    ```
 2. Install requerements
    ```sh
-   pip install -U requerements.
+   pip install -U requirements.
    ```
 
 <!-- USAGE EXAMPLES -->
